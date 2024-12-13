@@ -3,7 +3,6 @@ import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-// Define the props type
 interface JumbotronProps {
   title?: string;
   description?: string;
@@ -17,13 +16,14 @@ export default function Jumbotron({
   mobileImg,
   desktopImg,
 }: JumbotronProps) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -42,26 +42,24 @@ export default function Jumbotron({
     >
       <Grid2 container>
         {isMobile && mobileImg ? (
-          // Mobile image
           <Image
             src={mobileImg}
             alt="Wallpaper mobile"
-            layout="fill"
-            objectFit="fill"
+            fill
             style={{
+              objectFit: "cover",
               position: "absolute",
               top: 0,
               left: 0,
             }}
           />
         ) : (
-          // Desktop image
           <Image
             src={desktopImg}
             alt="Wallpaper desktop"
-            layout="fill"
-            objectFit="fill"
+            fill
             style={{
+              objectFit: "cover",
               position: "absolute",
               top: 0,
               left: 0,
@@ -83,16 +81,16 @@ export default function Jumbotron({
           size={{ xs: 10, md: 5 }}
         >
           <Grid2>
-            {title ? (
+            {title && (
               <Typography variant="h3" component="h1" sx={{ color: "white" }}>
                 {title}
               </Typography>
-            ) : null}
-            {description ? (
+            )}
+            {description && (
               <Typography variant="body1" component="p" sx={{ color: "white" }}>
                 {description}
               </Typography>
-            ) : null}
+            )}
           </Grid2>
         </Grid2>
       ) : null}
