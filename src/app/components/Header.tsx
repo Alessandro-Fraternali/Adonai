@@ -1,4 +1,5 @@
 import Link from "next/link";
+import links from "../texts/links.json";
 
 export default function Header() {
   return (
@@ -14,13 +15,11 @@ export default function Header() {
         gap: "20px",
       }}
     >
-      <Link href="/">Homepage</Link>
-      <Link href="Iniziative">Iniziative</Link>
-      <Link href="Eventi">Eventi</Link>
-      <Link href="Emergenze">Emergenze</Link>
-      <Link href="Contattaci">Contattaci</Link>
-      <Link href="Collaboratori">Collaboratori</Link>
-      <Link href="Bilanci-sociali">Bilanci sociali</Link>
+      {links.map((link) => (
+        <Link key={link.label} href={link.href}>
+          {link.label}
+        </Link>
+      ))}
     </header>
   );
 }
