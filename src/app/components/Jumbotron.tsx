@@ -1,7 +1,28 @@
+"use client";
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Jumbotron() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Imposta il valore iniziale
+    handleResize();
+
+    // Aggiungi l'event listener per il resize
+    window.addEventListener("resize", handleResize);
+
+    // Rimuovi l'event listener quando il componente viene smontato
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Box
       sx={{
@@ -12,27 +33,34 @@ export default function Jumbotron() {
         overflow: "hidden",
       }}
     >
-      <Image
-        src="/images/wallpaperODST.jpg"
-        alt="Wallpaper ODST"
-        layout="fill"
-        objectFit="fill"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      />
-      {/* <Box
-        sx={{
-          backgroundColor: "rgba(128, 128, 128, 0.8)",
-          maxWidth: "40%",
-          position: "absolute",
-          left: "50px",
-          top: "40%",
-          padding: "20px",
-        }}
-      > */}
+      {/* xs image */}
+      <Grid2 container>
+        {isMobile ? (
+          <Image
+            src="/images/blastoise.jpg"
+            alt="Wallpaper ODST"
+            layout="fill"
+            objectFit="fill"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+            }}
+          />
+        ) : (
+          <Image
+            src="/images/wallpaperODST.jpg"
+            alt="Wallpaper ODST"
+            layout="fill"
+            objectFit="fill"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+            }}
+          />
+        )}
+      </Grid2>
       <Grid2
         container
         sx={{
@@ -56,7 +84,6 @@ export default function Jumbotron() {
           </Typography>
         </Grid2>
       </Grid2>
-      {/* </Box> */}
     </Box>
   );
 }
