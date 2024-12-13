@@ -9,6 +9,7 @@ export default function Footer() {
         backgroundColor: "cornflowerblue",
         paddingLeft: "20px",
         display: "flex",
+        flexWrap: "wrap",
         alignItems: "center",
         gap: "20px",
       }}

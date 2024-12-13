@@ -9,6 +9,7 @@ export default function Header() {
         backgroundColor: "#4CAF",
         paddingLeft: "20px",
         display: "flex",
+        flexWrap: "wrap",
         alignItems: "center",
         gap: "20px",
       }}
