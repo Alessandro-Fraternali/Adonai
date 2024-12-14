@@ -2,7 +2,7 @@
   { "label": "Homepage", "href": "/" },
   { "label": "Iniziative", "href": "/Iniziative" },
   { "label": "Eventi", "href": "/Eventi" },
-  { "label": "Emergenze", "href": "/Emergenze" },
+  { "label": "Missioni", "href": "/Missioni" },
   { "label": "Contattaci", "href": "/Contattaci" },
   { "label": "Collaboratori", "href": "/Collaboratori" },
   { "label": "Bilanci sociali", "href": "/Bilanci-sociali" }

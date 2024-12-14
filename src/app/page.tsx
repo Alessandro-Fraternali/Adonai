@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import Jumbotron from "./components/Jumbotron";
+import Versatile from "./components/Versatile";
 import homepage from "./texts/homepage.json";
 
 export default function Home() {
@@ -11,7 +12,14 @@ export default function Home() {
         mobileImg="/images/blastoise.jpg"
         desktopImg="/images/wallpaperODST.jpg"
       />
-      <h1>Adonai</h1>
+      <Box padding={3}>
+        <Versatile
+          title="ADONAI"
+          description="La cucaracha"
+          image="/images/bwgf.jpg"
+          button="Sono il bottone"
+        />
+      </Box>
     </Box>
   );
 }
