@@ -36,7 +36,12 @@ export default function Porygon({
             size={{ xs: 12 }}
             gap={2}
             display={"flex"}
-            flexDirection={imageLeft ? "row-reverse" : "row"}
+            sx={{
+              flexDirection: {
+                xs: "column",
+                md: imageLeft ? "row-reverse" : "row",
+              },
+            }}
           >
             {description ? (
               <Grid2
