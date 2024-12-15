@@ -7,6 +7,7 @@ interface Mission {
   title?: string;
   description?: string;
   image?: string;
+  imageLeft?: boolean;
   button?: string;
 }
 
@@ -35,6 +36,7 @@ export default function Contattaci() {
                 title={initiative.title}
                 description={initiative.description}
                 image={initiative.image}
+                imageLeft={initiative.imageLeft}
                 button={initiative.button}
               />
               <span
@@ -42,7 +44,7 @@ export default function Contattaci() {
               >
                 <br />
                 <br />
-                fine blocco
+                ------ fine blocco ------
                 <br />
                 <br />
               </span>

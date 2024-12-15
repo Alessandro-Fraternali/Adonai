@@ -7,6 +7,7 @@ interface PorygonProps {
   description?: string;
   image?: string;
   button?: string;
+  imageLeft?: boolean;
 }
 
 export default function Porygon({
@@ -14,6 +15,7 @@ export default function Porygon({
   description,
   image,
   button,
+  imageLeft,
 }: PorygonProps) {
   return (
     <Box sx={{ flexGrow: 1, width: "90%", margin: "auto" }}>
@@ -29,64 +31,72 @@ export default function Porygon({
             </Typography>
           </Grid2>
         ) : null}
-        {description || button ? (
+        {description || button || image ? (
           <Grid2
-            bgcolor={"rgba(128, 128, 128, 0.2)"}
-            size={{ xs: 12, md: image ? 8 : 12 }}
+            size={{ xs: 12 }}
+            gap={2}
+            display={"flex"}
+            flexDirection={imageLeft ? "row-reverse" : "row"}
           >
             {description ? (
-              <ReactMarkdown
-                components={{
-                  p: ({ children }) => (
-                    <Typography variant="body1" sx={{ fontSize: "1.1rem" }}>
-                      {children}
-                    </Typography>
-                  ),
-                }}
-              >
-                {description}
-              </ReactMarkdown>
-            ) : null}
-            {button && (!image || description) ? (
               <Grid2
-                textAlign={{
-                  xs: "center",
-                  md: !image && description ? "center" : "left",
-                }}
-                marginLeft={!image && description ? 0 : 3}
-                marginTop={description ? 3 : 0}
+                bgcolor={"rgba(128, 128, 128, 0.2)"}
+                size={{ xs: 12, md: image ? 8 : 12 }}
               >
-                <Button variant="contained">{button}</Button>
+                {description ? (
+                  <ReactMarkdown
+                    components={{
+                      p: ({ children }) => (
+                        <Typography variant="body1" sx={{ fontSize: "1.1rem" }}>
+                          {children}
+                        </Typography>
+                      ),
+                    }}
+                  >
+                    {description}
+                  </ReactMarkdown>
+                ) : null}
+                {button && (!image || description) ? (
+                  <Grid2
+                    textAlign={{
+                      xs: "center",
+                      md: !image && description ? "center" : "left",
+                    }}
+                    marginLeft={!image && description ? 0 : 3}
+                    marginTop={description ? 3 : 0}
+                  >
+                    <Button variant="contained">{button}</Button>
+                  </Grid2>
+                ) : null}
               </Grid2>
             ) : null}
-          </Grid2>
-        ) : null}
-        {image ? (
-          <Grid2
-            bgcolor={"rgba(0, 128, 0, 0.2)"}
-            size={{ xs: 12, md: description ? 4 : 12 }}
-          >
-            <Box
-              sx={{
-                width: "100%",
-                minHeight: "380px",
-                position: "relative",
-                overflow: "hidden",
-                margin: "auto",
-              }}
-            >
-              <Image
-                src={image}
-                alt="Associazione ADONAI"
-                fill
-                style={{
-                  objectFit: "contain",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                }}
-              />
-            </Box>
+            {image ? (
+              <Grid2
+                bgcolor={"rgba(0, 128, 0, 0.2)"}
+                size={{ xs: 12, md: description ? 4 : 12 }}
+              >
+                <Box
+                  sx={{
+                    width: "100%",
+                    minHeight: "380px",
+                    position: "relative",
+                    overflow: "hidden",
+                    margin: "auto",
+                  }}
+                >
+                  <Image
+                    src={image}
+                    alt="Associazione ADONAI"
+                    fill
+                    style={{
+                      objectFit: "contain",
+                      top: 0,
+                      left: 0,
+                    }}
+                  />
+                </Box>
+              </Grid2>
+            ) : null}
           </Grid2>
         ) : null}
         {button && image && !description ? (
