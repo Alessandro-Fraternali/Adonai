@@ -6,6 +6,7 @@ interface Initiative {
   title: string;
   description: string;
   image: string;
+  imageLeft: boolean;
   button: string;
 }
 
@@ -34,6 +35,7 @@ export default function Iniziative() {
                 title={initiative.title}
                 description={initiative.description}
                 image={initiative.image}
+                imageLeft={initiative.imageLeft}
                 button={initiative.button}
               />{" "}
               <br />

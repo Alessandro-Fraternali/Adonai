@@ -6,6 +6,7 @@ interface Evento {
   title: string;
   description: string;
   image: string;
+  imageLeft: boolean;
   button: string;
 }
 
@@ -38,9 +39,10 @@ export default function Missioni() {
                 <>
                   <Porygon
                     key={eventoKey}
-                    // title={evento.title}
+                    title={evento.title}
                     description={evento.description}
                     image={evento.image}
+                    imageLeft={evento.imageLeft}
                     button={evento.button}
                   />{" "}
                   <br />

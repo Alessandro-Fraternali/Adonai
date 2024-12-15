@@ -5,24 +5,28 @@
       "title": "Emergenza Alluvione Emili-Romagna",
       "description": "Durante il periodo dell’ alluvione in Emilia Romagna, Casa Famiglia Adonai ha voluto mettere sul campo tutto l’organico a disposizione del prossimo. La nostra associazione ha preso il posto delle cucine popolari che erano completamente allegate. In quella settimana di emergenza abbiamo cucinato e messo a disposizione della Don Milani 3500 pasti. \n\n Casa Famiglia Adonai ringrazia sentitamente per la collaborazione ricevuta le chiese di: **Santa Maria della Speranza**, la **Chiesa di San Mauro in Valle** e la **Cucina/Gastronomia da Marco** che hanno cucinato insieme a noi. Associazione Casa Famiglia Adonai ringrazia sentitamente anche gli Angeli del Fango o i “Burdel del Paciug” che si sono impegnati tutti i giorni in modo volontario per pulire dal fango tutte le strade di Cesena!",
       "image": "/images/venom.jpg",
+      "imageLeft": false,
       "button": "Cliccami"
     },
     "missione2": {
       "title": "Terremoto in Turchia febbraio 2023",
       "description": "In collaborazione con Help – Associazione di Volontariato – Sassuolo. \n\n Associazione casa famiglia Adonai decide nel febbraio 2023 di mettere a disposizione tutte le risorse per far fronte all’emergenza che si era venuta a creare ossia il terremoto in Turchia. \n\n Grazie al materiale raccolto attraverso il progetto solidarietà a Km 0 la nostra associazione decide di collaborare con l’associazione **“Help”** di Sassuolo spedendo con un furgone tutto il materiale a nostra disposizione per poi essere caricato su un bilico con destinazione Turchia! \n\n Un ringraziamento va a tutte le famiglie di Cesena che hanno collaborato nel regalare il necessario alla nostra Associazione ed un grazie chi a tutt’oggi ci sostiene e a coloro che lo faranno in futuro!",
       "image": "/images/bwgf.jpg",
+      "imageLeft": true,
       "button": "Cliccami 2"
     },
     "missione3": {
       "title": "Guerra in Ucraina Gennaio 2022",
       "description": "Per far fronte a questa emergenza che ha visto tutti noi coinvolti, il Comune di Cesena si è mosso mettendo a disposizione qualsiasi tipo di alloggio libero per accogliere quanti scappavano dalla guerra. L’Associazione Casa Famiglia ha raccolto generi alimentari, beni di prima necessità e soprattutto vestiario. Diverse aziende del territorio e non, si sono unite alla nostra raccolta fornendoci tutto il necessario per questa missione. La raccolta è durata circa due mesi. Un altro mese è servito a preparare gli scatoloni e i sacchi. Infine l’8 aprile 2022 è partito il primo camion (un bilico) pieno di aiuti umanitari destinazione Romania al confine con l’Ucraina e successivamente ha raggiunto l’Ucraina.",
       "image": "/images/jiraiya.jpg",
+      "imageLeft": false,
       "button": "Cliccami 3"
     },
     "missione4": {
       "title": "Sostegno in Kosovo Marzo 2022",
       "description": "Grazie al materiale raccolto con il progetto solidarietà a Km0 abbiamo e continuiamo ad avere materiale a disposizione per poter portare avanti questo progetto di aiuto e sostegno al popolo kosovaro con vestiario e materiale di prima necessità. \n\n Questa collaborazione è resa possibile anche grazie alla Chiesa Evangelica che prima di noi collaborava con i volontari di Nogale Rocca (in provincia di Verona ) provvisti di deposito e attrezzati con bilici che vengono inviati presso una chiesa evangelica in Kosovo. La chiesa in Kosovo provvede ancora attualmente alla distribuzione diretta alle famiglie bisognose sul territorio. \n Questa collaborazione ha avuto inizio a marzo 2020 e procede ancora oggi.",
       "image": "/images/vader.jpg",
+      "imageLeft": true,
       "button": "Cliccami 4"
     }
   }

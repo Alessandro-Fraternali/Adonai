@@ -7,12 +7,14 @@
         "title": "ANNO 2023",
         "description": "Durante il periodo post-alluvione a Cesena molta merce donata (Vestiario, oggetti per la casa, giocattoli etc.) non era stata ancora smistata. Grazie a questo evento che abbiamo denominato **“Giornata del Dono”** , la nostra associazione è riuscita a donare circa 35 bancali a chi ne aveva bisogno, inoltre, in collaborazione con l’ associazione **“Sammaritano in azione”** e grazie ai loro volontari, è stato possibile estendere questo evento distribuendo vestiario e coperte ai senzatetto tra Imola e Firenze.",
         "image": "/images/vader.jpg",
+        "imageLeft": false,
         "button": "Cliccami"
       },
       "evento2": {
         "title": "ANNO 2023",
         "description": "Nel mese di Agosto, tre mesi dopo l’alluvione a Cesena, la nostra associazione ha sentito nel cuore la volontà di dover ringraziare pubblicamente tutte le associazioni, le aziende e le chiese che si sono prestate a collaborare con noi. I ringraziamenti sono avvenuti durante una serata iniziata con un concerto live di musica cristiana seguito da una cena tutti assieme. Il ricavato di questo evento è stato investito per migliorare i nostri servizi a sostegno delle famiglie in nostra assistenza.",
         "image": "/images/wallpaperODST.jpg",
+        "imageLeft": true,
         "button": "Cliccami"
       }
     },
@@ -22,12 +24,14 @@
         "title": "ANNO 2022",
         "description": "Durante quest’evento l’associazione **“Casa Famiglia Adonai”** decide di rivolgere la propria attenzione anche ai bambini organizzando uno spettacolo teatrale dei burattini. L’evento ha avuto luogo il 20/05/2022 presso i **“Giardini Savelli”**. L’evento è avvenuto in collaborazione con l’associazione **“La compagnia dell’ora felice”**.",
         "image": "/images/jiraiya.jpg",
+        "imageLeft": false,
         "button": "Cliccami 2"
       },
       "evento2": {
         "title": "ANNO 2022",
         "description": "Dal 24/03/2022 l’associazione **“Casa Famiglia Adonai”** decide di mettere a disposizione di chiunque sta sostenendo la nostra causa delle uova di cioccolato preparate dalla dolciaria **“Dalba”** di Gatteo a Mare. Il ricavato sarà devoluto alle nostre famiglie in nostra assistenza.",
         "image": "/images/venom.jpg",
+        "imageLeft": true,
         "button": "Cliccami 3"
       }
     },
@@ -37,12 +41,14 @@
         "title": "ANNO 2021",
         "description": "Il 17/11/2021 l’associazione **“Casa Famiglia Adonai”** decide di organizzare una cena solidale per sponsorizzarsi e farsi conoscere sul territorio. Per questa cena solidale sono state invitate le famiglie in nostra assistenza e le aziende che ci stanno sostenendo. In accordo con il ristorante **“La Tavolaccia”** è stato stilato un menu a prezzo fisso di 25€ per gli adulti e 10€ per i bambini; una parte del ricavato è stato destinato per l’autofinanziamento dell’associazione.",
         "image": "/images/bewd.jpg",
+        "imageLeft": false,
         "button": "Cliccami 2"
       },
       "evento2": {
         "title": "ANNO 2021",
         "description": "Successivamente alla pandemia che ci ha costretto a stare fermi per un lungo periodo abbiamo deciso di dedicare la nostra prima iniziativa ai bambini neonatali del reparto di terapia intensiva pediatrica e neonatale dell’ospedale **“Bufalini”** di Cesena. Rivolgendoci al servizio **“Prematuriamo.it”** siamo riusciti a trovare la convenzione per mettere a disposizione del reparto Body e Pannolini.",
         "image": "/images/bwgf.jpg",
+        "imageLeft": true,
         "button": "Cliccami 3"
       }
     },
@@ -52,6 +58,7 @@
         "title": "ANNO 2020",
         "description": "Il 19 ottobre 2020 l’Associazione **“Casa Famiglia Adonai”** ha organizzato un concerto di beneficenza con la cantante cristiana evangelica **“Sara Taccardi”**. Lo scopo di questo concerto ad appena un anno dalla costituzione come associazione era quello di parlare dell’associazione e farci conoscere nel territorio di Cesena e limitrofi.",
         "image": "/images/mentor.jpg",
+        "imageLeft": false,
         "button": "Cliccami 2"
       }
     },
@@ -61,12 +68,14 @@
         "title": "ANNO 2019",
         "description": "Il 14 dicembre 2019 l’Associazione **“Casa Famiglia Adonai”** a 6 mesi dalla sua nascita ha deciso di convocare i Dottori **Sandro e Martina Gianneramo** facenti parte, come associati, dell’associazione **“JOY AND FRIENDS”**. \n\n L’evento aveva come titolo: **“TRASFORMA IL TUO DOLORE, QUELLO CHE PER TE SEMBRA LA FINE, PER DIO PUÒ ESSERE UN NUOVO INIZIO”**. \n\n Con la conferenza si è messo a confronto la fede e la medicina e come “Il Signore può trasformare le nostre vite quando ormai ci sembra di aver raggiunto il fondo”. \n\n Al termine della conferenza abbiamo avuto modo di far conoscere la nostra associazione alle persone presenti e parlare un po’ di noi.",
         "image": "/images/igris.jpg",
+        "imageLeft": true,
         "button": "Cliccami 2"
       },
       "evento2": {
         "title": "ANNO 2019",
         "description": "A Settembre 2019 **“Christian music meeting”** è stato il primo concerto cristiano evangelico sponsorizzato dall’associazione **“Casa Famiglia Adonai”** per presentare e fare conoscere il nostro progetto alle chiese locali. Come ospite d’onore è stato invitato il cantautore evangelico **“Angelo Maugieri”**.",
         "image": "/images/grimmjow.jpg",
+        "imageLeft": false,
         "button": "Cliccami 2"
       }
     }
