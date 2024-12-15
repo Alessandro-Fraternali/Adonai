@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Versatile from "../components/Versatile";
+import Porygon from "../components/Porygon";
 import iniziative from "../texts/iniziative.json";
 
 interface Initiative {
@@ -23,18 +23,21 @@ const iniziativeData: IniziativeData = iniziative;
 export default function Iniziative() {
   return (
     <>
-      <Box padding={3}>
+      <Box>
         <h1>{iniziativeData.title}</h1>
         {Object.keys(iniziativeData.iniziative).map((key) => {
           const initiative = iniziativeData.iniziative[key];
           return (
-            <Versatile
-              key={key}
-              title={initiative.title}
-              description={initiative.description}
-              image={initiative.image}
-              button={initiative.button}
-            />
+            <>
+              <Porygon
+                key={key}
+                title={initiative.title}
+                description={initiative.description}
+                image={initiative.image}
+                button={initiative.button}
+              />{" "}
+              <br />
+            </>
           );
         })}
       </Box>

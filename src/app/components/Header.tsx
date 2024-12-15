@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header
       style={{
-        width: "100vw",
+        width: "100%",
         height: "var(--header-height)",
         backgroundColor: "#4CAF",
         paddingLeft: "20px",

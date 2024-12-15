@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
-import Versatile from "../components/Versatile";
 import missioni from "../texts/missioni.json";
+import Porygon from "../components/Porygon";
 
 interface Mission {
   title: string;
@@ -10,31 +10,34 @@ interface Mission {
 }
 
 interface Missions {
-  [key: string]: Mission; // This should map string keys to Mission objects
+  [key: string]: Mission;
 }
 
 interface MissioniData {
   title: string;
-  missioni: Missions; // This should contain a collection of missions
+  missioni: Missions;
 }
 
-const missioniData: MissioniData = missioni; // Ensure that the structure of missioni.json matches MissioniData
+const missioniData: MissioniData = missioni;
 
 export default function Missioni() {
   return (
     <>
-      <Box padding={3}>
+      <Box>
         <h1>{missioniData.title}</h1>
         {Object.keys(missioniData.missioni).map((key) => {
           const initiative = missioniData.missioni[key];
           return (
-            <Versatile
-              key={key}
-              title={initiative.title}
-              description={initiative.description}
-              image={initiative.image}
-              button={initiative.button}
-            />
+            <>
+              <Porygon
+                key={key}
+                title={initiative.title}
+                description={initiative.description}
+                image={initiative.image}
+                button={initiative.button}
+              />{" "}
+              <br />
+            </>
           );
         })}
       </Box>

@@ -1,23 +1,55 @@
-import Link from "next/link";
+import { Box, Typography } from "@mui/material";
+import Porygon from "../components/Porygon";
+import eventi from "../texts/eventi.json";
 
-export default function Eventi() {
+interface Evento {
+  title: string;
+  description: string;
+  image: string;
+  button: string;
+}
+
+interface EventiAnno {
+  title: string;
+  [key: string]: Evento | string;
+}
+
+interface Eventi {
+  title: string;
+  eventi: {
+    [key: string]: EventiAnno;
+  };
+}
+
+const eventiData = eventi as Eventi;
+
+export default function Missioni() {
   return (
     <>
-      <h1>Eventi</h1>
-      <Link href="/">Homepage</Link> <br />
-      <br />
-      <Link href="Iniziative">Iniziative</Link> <br />
-      <br />
-      <Link href="Eventi">Eventi</Link> <br />
-      <br />
-      <Link href="Emergenze">Emergenze</Link> <br />
-      <br />
-      <Link href="Contattaci">Contattaci</Link> <br />
-      <br />
-      <Link href="Collaboratori">Collaboratori</Link> <br />
-      <br />
-      <Link href="Bilanci-sociali">Bilanci-sociali</Link> <br />
-      <br />
+      <Box>
+        <Typography variant="h1">{eventiData.title}</Typography>
+        {Object.entries(eventiData.eventi).map(([annoKey, annoValue]) => (
+          <Box key={annoKey} marginBottom={3}>
+            <Typography variant="h2">{annoValue.title}</Typography>
+            {Object.entries(annoValue).map(([eventoKey, eventoValue]) => {
+              if (eventoKey === "title") return null;
+              const evento = eventoValue as Evento;
+              return (
+                <>
+                  <Porygon
+                    key={eventoKey}
+                    // title={evento.title}
+                    description={evento.description}
+                    image={evento.image}
+                    button={evento.button}
+                  />{" "}
+                  <br />
+                </>
+              );
+            })}
+          </Box>
+        ))}
+      </Box>
     </>
   );
 }

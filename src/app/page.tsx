@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Jumbotron from "./components/Jumbotron";
-import Versatile from "./components/Versatile";
+import Porygon from "./components/Porygon";
 import homepage from "./texts/homepage.json";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         desktopImg="/images/wallpaperODST.jpg"
       />
       <Box padding={3}>
-        <Versatile
+        <Porygon
           title="ADONAI"
           description="La cucaracha"
           image="/images/bwgf.jpg"

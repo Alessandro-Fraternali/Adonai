@@ -1,23 +1,55 @@
-import Link from "next/link";
+import { Box } from "@mui/material";
+// import Versatile from "../components/Versatile";
+import versatiletest from "../texts/versatiletest.json";
+import Porygon from "../components/Porygon";
+
+interface Mission {
+  title?: string;
+  description?: string;
+  image?: string;
+  button?: string;
+}
+
+interface Missions {
+  [key: string]: Mission;
+}
+
+interface MissioniData {
+  title: string;
+  versatili: Missions;
+}
+
+const missioniData: MissioniData = versatiletest;
 
 export default function Contattaci() {
   return (
     <>
-      <h1>Contattaci</h1>
-      <Link href="/">Homepage</Link> <br />
-      <br />
-      <Link href="Iniziative">Iniziative</Link> <br />
-      <br />
-      <Link href="Eventi">Eventi</Link> <br />
-      <br />
-      <Link href="Emergenze">Emergenze</Link> <br />
-      <br />
-      <Link href="Contattaci">Contattaci</Link> <br />
-      <br />
-      <Link href="Collaboratori">Collaboratori</Link> <br />
-      <br />
-      <Link href="Bilanci-sociali">Bilanci-sociali</Link> <br />
-      <br />
+      <Box>
+        <h1 style={{ marginBottom: 20 }}>{missioniData.title}</h1>
+        {Object.keys(missioniData.versatili).map((key) => {
+          const initiative = missioniData.versatili[key];
+          return (
+            <>
+              <Porygon
+                key={key}
+                title={initiative.title}
+                description={initiative.description}
+                image={initiative.image}
+                button={initiative.button}
+              />
+              <span
+                style={{ textAlign: "center", display: "block", width: "100%" }}
+              >
+                <br />
+                <br />
+                fine blocco
+                <br />
+                <br />
+              </span>
+            </>
+          );
+        })}
+      </Box>
     </>
   );
 }

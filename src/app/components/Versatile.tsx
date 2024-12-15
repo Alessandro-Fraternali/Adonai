@@ -17,49 +17,57 @@ export default function Versatile({
   button,
 }: VersatileProps) {
   return (
-    <Box>
-      <Grid2
-        size={12}
-        bgcolor={"coral"}
-        textAlign={"center"}
-        mb={2}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 2,
-        }}
-      >
-        {title ? (
-          <Typography variant="h4" component="h2">
+    <Grid2
+      size={12}
+      bgcolor={"coral"}
+      textAlign={"center"}
+      mb={2}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        rowGap: 2,
+      }}
+    >
+      {title ? (
+        <Box mb={0}>
+          <Typography variant="h4" component="h2" mb={0}>
             {title}
           </Typography>
-        ) : null}
-        {description ? <ReactMarkdown>{description}</ReactMarkdown> : null}
-        {image ? (
-          <Box
-            sx={{
-              width: "100%",
-              minHeight: "380px", // Imposta un'altezza fissa o un'altezza minima
-              position: "relative",
-              overflow: "hidden",
-              margin: "auto",
+        </Box>
+      ) : null}
+      {description ? (
+        <Box mb={0}>
+          <ReactMarkdown>{description}</ReactMarkdown>
+        </Box>
+      ) : null}
+      {image ? (
+        <Box
+          sx={{
+            width: "100%",
+            minHeight: "380px",
+            position: "relative",
+            overflow: "hidden",
+            margin: "auto",
+          }}
+        >
+          <Image
+            src={image}
+            alt="Associazione ADONAI"
+            fill
+            style={{
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              left: 0,
             }}
-          >
-            <Image
-              src={image}
-              alt="Associazione ADONAI"
-              fill
-              style={{
-                objectFit: "contain", // Usa "contain" per garantire che l'immagine sia completamente visibile
-                position: "absolute",
-                top: 0,
-                left: 0,
-              }}
-            />
-          </Box>
-        ) : null}
-        {button ? <Button variant="outlined">{button}</Button> : null}
-      </Grid2>
-    </Box>
+          />
+        </Box>
+      ) : null}
+      {button ? (
+        <Box bgcolor={"gray"}>
+          <Button variant="contained">{button}</Button>
+        </Box>
+      ) : null}
+    </Grid2>
   );
 }

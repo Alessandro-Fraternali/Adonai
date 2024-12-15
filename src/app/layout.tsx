@@ -20,7 +20,9 @@ export default function RootLayout({
           }}
         >
           <Header />
-          <main style={{ flex: 1, backgroundColor: "lightgray" }}>
+          <main
+            style={{ flex: 1, maxWidth: "100vw", backgroundColor: "lightgray" }}
+          >
             {children}
           </main>
           <Footer />

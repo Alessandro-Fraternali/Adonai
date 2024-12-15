@@ -1,5 +1,5 @@
 {
-  "title": "Iniziative",
+  "title": "Missioni",
   "missioni": {
     "missione1": {
       "title": "Emergenza Alluvione Emili-Romagna",
@@ -9,8 +9,7 @@
     },
     "missione2": {
       "title": "Terremoto in Turchia febbraio 2023",
-      "subtitle": "In collaborazione con Help – Associazione di Volontariato – Sassuolo.",
-      "description": "Associazione casa famiglia Adonai decide nel febbraio 2023 di mettere a disposizione tutte le risorse per far fronte all’emergenza che si era venuta a creare ossia il terremoto in Turchia. \n\n Grazie al materiale raccolto attraverso il progetto solidarietà a Km 0 la nostra associazione decide di collaborare con l’associazione **“Help”** di Sassuolo spedendo con un furgone tutto il materiale a nostra disposizione per poi essere caricato su un bilico con destinazione Turchia! \n\n Un ringraziamento va a tutte le famiglie di Cesena che hanno collaborato nel regalare il necessario alla nostra Associazione ed un grazie chi a tutt’oggi ci sostiene e a coloro che lo faranno in futuro!",
+      "description": "In collaborazione con Help – Associazione di Volontariato – Sassuolo. \n\n Associazione casa famiglia Adonai decide nel febbraio 2023 di mettere a disposizione tutte le risorse per far fronte all’emergenza che si era venuta a creare ossia il terremoto in Turchia. \n\n Grazie al materiale raccolto attraverso il progetto solidarietà a Km 0 la nostra associazione decide di collaborare con l’associazione **“Help”** di Sassuolo spedendo con un furgone tutto il materiale a nostra disposizione per poi essere caricato su un bilico con destinazione Turchia! \n\n Un ringraziamento va a tutte le famiglie di Cesena che hanno collaborato nel regalare il necessario alla nostra Associazione ed un grazie chi a tutt’oggi ci sostiene e a coloro che lo faranno in futuro!",
       "image": "/images/bwgf.jpg",
       "button": "Cliccami 2"
     },
