@@ -29,9 +29,8 @@ export default function Iniziative() {
         {Object.keys(iniziativeData.iniziative).map((key) => {
           const initiative = iniziativeData.iniziative[key];
           return (
-            <>
+            <Box key={key}>
               <Porygon
-                key={key}
                 title={initiative.title}
                 description={initiative.description}
                 image={initiative.image}
@@ -39,7 +38,7 @@ export default function Iniziative() {
                 button={initiative.button}
               />{" "}
               <br />
-            </>
+            </Box>
           );
         })}
       </Box>

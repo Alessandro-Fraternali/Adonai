@@ -52,7 +52,10 @@ export default function Porygon({
                   <ReactMarkdown
                     components={{
                       p: ({ children }) => (
-                        <Typography variant="body1" sx={{ fontSize: "1.1rem" }}>
+                        <Typography
+                          variant="body1"
+                          sx={{ fontSize: "1.1rem", padding: 2 }}
+                        >
                           {children}
                         </Typography>
                       ),
@@ -67,7 +70,7 @@ export default function Porygon({
                       xs: "center",
                       md: !image && description ? "center" : "left",
                     }}
-                    marginLeft={!image && description ? 0 : 3}
+                    marginLeft={!image && description ? 0 : 5}
                     marginTop={description ? 3 : 0}
                   >
                     <Button variant="contained">{button}</Button>
