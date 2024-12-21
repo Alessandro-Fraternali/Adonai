@@ -34,7 +34,7 @@ export default function Jumbotron({
     <Box
       sx={{
         height: "calc(100vh - var(--header-height))",
-        width: "100vw",
+        width: "100%",
         position: "relative",
         overflow: "hidden",
       }}

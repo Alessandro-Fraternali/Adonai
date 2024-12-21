@@ -2,17 +2,17 @@ import { Box } from "@mui/material";
 import missioni from "../texts/missioni.json";
 import Porygon from "../components/Porygon";
 
-interface Mission {
+type Mission = {
   title: string;
   description: string;
-  image: string;
+  images: Array<string>;
   imageLeft: boolean;
   button: string;
-}
+};
 
-interface Missions {
+type Missions = {
   [key: string]: Mission;
-}
+};
 
 interface MissioniData {
   title: string;
@@ -27,19 +27,18 @@ export default function Missioni() {
       <Box>
         <h1>{missioniData.title}</h1>
         {Object.keys(missioniData.missioni).map((key) => {
-          const initiative = missioniData.missioni[key];
+          const missioni = missioniData.missioni[key];
           return (
-            <>
+            <Box key={key}>
               <Porygon
-                key={key}
-                title={initiative.title}
-                description={initiative.description}
-                image={initiative.image}
-                imageLeft={initiative.imageLeft}
-                button={initiative.button}
-              />{" "}
+                title={missioni.title}
+                description={missioni.description}
+                images={missioni.images} // Pass the array of image URLs
+                imageLeft={missioni.imageLeft}
+                button={missioni.button}
+              />
               <br />
-            </>
+            </Box>
           );
         })}
       </Box>

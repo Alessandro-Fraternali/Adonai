@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Jumbotron from "./components/Jumbotron";
 import Porygon from "./components/Porygon";
 import homepage from "./texts/homepage.json";
+import SimpleCarousel from "./components/CarouselSide";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <Porygon
           title="ADONAI"
           description="La cucaracha"
-          image="/images/bwgf.jpg"
+          images={["/images/bwgf.jpg"]}
           button="Sono il bottone"
         />
       </Box>

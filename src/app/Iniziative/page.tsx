@@ -5,7 +5,7 @@ import iniziative from "../texts/iniziative.json";
 interface Initiative {
   title: string;
   description: string;
-  image: string;
+  images: Array<string>;
   imageLeft: boolean;
   button: string;
 }
@@ -33,10 +33,10 @@ export default function Iniziative() {
               <Porygon
                 title={initiative.title}
                 description={initiative.description}
-                image={initiative.image}
+                images={initiative.images}
                 imageLeft={initiative.imageLeft}
                 button={initiative.button}
-              />{" "}
+              />
               <br />
             </Box>
           );

@@ -1,11 +1,12 @@
 import { Box, Button, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
+import CarouselSide from "./CarouselSide";
 
 interface PorygonProps {
   title?: string;
   description?: string;
-  image?: string;
+  images?: Array<string>;
   button?: string;
   imageLeft?: boolean;
 }
@@ -13,7 +14,7 @@ interface PorygonProps {
 export default function Porygon({
   title,
   description,
-  image,
+  images,
   button,
   imageLeft,
 }: PorygonProps) {
@@ -31,7 +32,7 @@ export default function Porygon({
             </Typography>
           </Grid2>
         ) : null}
-        {description || button || image ? (
+        {description || button || images ? (
           <Grid2
             size={{ xs: 12 }}
             gap={2}
@@ -46,7 +47,7 @@ export default function Porygon({
             {description ? (
               <Grid2
                 bgcolor={"rgba(128, 128, 128, 0.2)"}
-                size={{ xs: 12, md: image ? 8 : 12 }}
+                size={{ xs: 12, md: images ? 7 : 12 }}
               >
                 {description ? (
                   <ReactMarkdown
@@ -64,13 +65,13 @@ export default function Porygon({
                     {description}
                   </ReactMarkdown>
                 ) : null}
-                {button && (!image || description) ? (
+                {button && (!images || description) ? (
                   <Grid2
                     textAlign={{
                       xs: "center",
-                      md: !image && description ? "center" : "left",
+                      md: !images && description ? "center" : "left",
                     }}
-                    marginLeft={!image && description ? 0 : 5}
+                    marginLeft={!images && description ? 0 : 5}
                     marginTop={description ? 3 : 0}
                   >
                     <Button variant="contained">{button}</Button>
@@ -78,10 +79,10 @@ export default function Porygon({
                 ) : null}
               </Grid2>
             ) : null}
-            {image ? (
+            {images ? (
               <Grid2
-                bgcolor={"rgba(0, 128, 0, 0.2)"}
-                size={{ xs: 12, md: description ? 4 : 12 }}
+                bgcolor={"rgba(0, 128, 0, 0.07)"}
+                size={{ xs: 12, md: description ? 5 : 12 }}
               >
                 <Box
                   sx={{
@@ -92,22 +93,26 @@ export default function Porygon({
                     margin: "auto",
                   }}
                 >
-                  <Image
-                    src={image}
-                    alt="Associazione ADONAI"
-                    fill
-                    style={{
-                      objectFit: "contain",
-                      top: 0,
-                      left: 0,
-                    }}
-                  />
+                  {images.length === 1 ? (
+                    <Image
+                      src={images[0]}
+                      alt="Associazione ADONAI"
+                      fill
+                      style={{
+                        objectFit: "contain",
+                        top: 0,
+                        left: 0,
+                      }}
+                    />
+                  ) : (
+                    <CarouselSide images={images} />
+                  )}
                 </Box>
               </Grid2>
             ) : null}
           </Grid2>
         ) : null}
-        {button && image && !description ? (
+        {button && images && !description ? (
           <Grid2
             bgcolor={"rgba(255, 255, 0, 0.2)"}
             size={{ xs: 12 }}

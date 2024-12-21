@@ -6,7 +6,7 @@ import Porygon from "../components/Porygon";
 interface Mission {
   title?: string;
   description?: string;
-  image?: string;
+  images?: Array<string>;
   imageLeft?: boolean;
   button?: string;
 }
@@ -35,7 +35,7 @@ export default function Contattaci() {
                 key={key}
                 title={initiative.title}
                 description={initiative.description}
-                image={initiative.image}
+                images={initiative.images}
                 imageLeft={initiative.imageLeft}
                 button={initiative.button}
               />

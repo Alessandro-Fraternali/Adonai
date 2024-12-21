@@ -5,7 +5,7 @@ import eventi from "../texts/eventi.json";
 interface Evento {
   title: string;
   description: string;
-  image: string;
+  images: Array<string>;
   imageLeft: boolean;
   button: string;
 }
@@ -41,7 +41,7 @@ export default function Missioni() {
                     key={eventoKey}
                     title={evento.title}
                     description={evento.description}
-                    image={evento.image}
+                    images={evento.images}
                     imageLeft={evento.imageLeft}
                     button={evento.button}
                   />{" "}
