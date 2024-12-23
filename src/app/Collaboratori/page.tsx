@@ -1,4 +1,4 @@
-import { Box, Grid2, Link, Typography } from "@mui/material";
+import { Box, Grid2, Typography } from "@mui/material";
 import CarouselBrands from "../components/CarouselBrands";
 import collaboratori from "../texts/collaboratori.json";
 import Image from "next/image";

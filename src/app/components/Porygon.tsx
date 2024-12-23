@@ -1,6 +1,5 @@
 import { Box, Button, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
 import CarouselSide from "./CarouselSide";
 import Description from "./Description";
 
