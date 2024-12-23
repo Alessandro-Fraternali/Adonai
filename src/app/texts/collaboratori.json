@@ -1,0 +1,118 @@
+{
+  "title": "Collaboratori",
+  "description": "Anche quest’anno, la nostra associazione ha avuto modo di collaborare con diverse associazioni, esercenti e attività della zona e non solo.",
+  "ringraziamenti": "Siamo davvero grati a queste aziende che, grazie alla loro generosità, ci permettono di portare un sorriso alle persone che si trovano in difficoltà.",
+  "ringraziamenti_img": "/images/ringraziamenti.jpg",
+  "collaboratori": [
+    {
+      "url": "https://www.diapason.rimini.it/",
+      "src": "/images/collaboratori-loghi/diapason.png",
+      "alt": "Diapason"
+    },
+    {
+      "url": "https://www.nph-italia.org/home/",
+      "src": "/images/collaboratori-loghi/francescarava.jpg",
+      "alt": "Fondazione Francesca Rava"
+    },
+    {
+      "url": "https://www.tripadvisor.it/Restaurant_Review-g2550048-d21021940-Reviews-Da_Marco-Santa_Maria_Nuova_Province_of_Ancona_Marche.html",
+      "src": "/images/collaboratori-loghi/damarco.jpg",
+      "alt": "Rosticceria da Marco"
+    },
+    {
+      "url": "https://www.credit-agricole.it/",
+      "src": "/images/collaboratori-loghi/creditagricole.png",
+      "alt": "Crédit Agricole"
+    },
+    {
+      "url": "https://www.lafinestradelsole.com/",
+      "src": "/images/collaboratori-loghi/lafinestradelsole.png",
+      "alt": "La finestra del Sole"
+    },
+    {
+      "url": "https://www.pieri-group.com/it/",
+      "src": "/images/collaboratori-loghi/pierigroup.png",
+      "alt": "Pieri Group"
+    },
+    {
+      "url": "https://www.sedicimedia.it/",
+      "src": "/images/collaboratori-loghi/sedicimedia.png",
+      "alt": "Sedicimedia"
+    },
+    {
+      "url": "https://www.arciromagna.it/arciturismo",
+      "src": "/images/collaboratori-loghi/arcicesena.png",
+      "alt": "Arci Cesena"
+    },
+    {
+      "url": "https://www.facebook.com/otticaeclissi",
+      "src": "/images/collaboratori-loghi/otticaeclissi.JPG",
+      "alt": "Ottica Eclissi"
+    },
+    {
+      "url": "https://www.facebook.com/p/Milano-Sospesa-100073933982778/",
+      "src": "/images/collaboratori-loghi/sospesa.jpg",
+      "alt": "SOS PESA"
+    },
+    {
+      "url": "MATITA",
+      "src": "/images/collaboratori-loghi/vader.jpg",
+      "alt": "MATITA"
+    },
+    {
+      "url": "https://www.facebook.com/cartolerialagommina/",
+      "src": "/images/collaboratori-loghi/lagommina.jpg",
+      "alt": "La Gommina"
+    },
+    {
+      "url": "https://www.cartolandiacesena.it/",
+      "src": "/images/collaboratori-loghi/cartolandia.png",
+      "alt": "Cartolandia"
+    },
+    {
+      "url": "https://www.facebook.com/CartoleriaStadioCesena/",
+      "src": "/images/collaboratori-loghi/vader.jpg",
+      "alt": "Cartolibreria Stadio Cesena"
+    },
+    {
+      "url": "milan",
+      "src": "/images/collaboratori-loghi/vader.jpg",
+      "alt": "milan"
+    },
+    {
+      "url": "https://www.facebook.com/p/Missione-Alto-Solaio-100075199809294/",
+      "src": "/images/collaboratori-loghi/altosolaio.jpg",
+      "alt": "Missione Alto Solaio"
+    },
+    {
+      "url": "lineastampa",
+      "src": "/images/collaboratori-loghi/vader.jpg",
+      "alt": "Linea Stampa"
+    },
+    {
+      "url": "https://www.facebook.com/GesuSalvaChieti/",
+      "src": "/images/collaboratori-loghi/gesusalva.jpg",
+      "alt": "Gesù salva"
+    },
+    {
+      "url": "https://www.aiutility.org/",
+      "src": "/images/collaboratori-loghi/aiutility.png",
+      "alt": "Aiutility"
+    },
+    {
+      "url": "https://www.romagnabanca.it/privati/",
+      "src": "/images/collaboratori-loghi/romagnabanca.png",
+      "alt": "Romagna Banca"
+    },
+    {
+      "url": "LINK",
+      "src": "/images/collaboratori-loghi/vader.jpg",
+      "alt": "Samariteanul"
+    },
+    {
+      "url": "LINK",
+      "src": "/images/collaboratori-loghi/vader.jpg",
+      "alt": "Wasabi"
+    }
+  ]
+}

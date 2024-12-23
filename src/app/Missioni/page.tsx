@@ -33,7 +33,7 @@ export default function Missioni() {
               <Porygon
                 title={missioni.title}
                 description={missioni.description}
-                images={missioni.images} // Pass the array of image URLs
+                images={missioni.images}
                 imageLeft={missioni.imageLeft}
                 button={missioni.button}
               />

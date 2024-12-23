@@ -2,6 +2,7 @@ import { Box, Button, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import CarouselSide from "./CarouselSide";
+import Description from "./Description";
 
 interface PorygonProps {
   title?: string;
@@ -49,22 +50,7 @@ export default function Porygon({
                 bgcolor={"rgba(128, 128, 128, 0.2)"}
                 size={{ xs: 12, md: images ? 7 : 12 }}
               >
-                {description ? (
-                  <ReactMarkdown
-                    components={{
-                      p: ({ children }) => (
-                        <Typography
-                          variant="body1"
-                          sx={{ fontSize: "1.1rem", padding: 2 }}
-                        >
-                          {children}
-                        </Typography>
-                      ),
-                    }}
-                  >
-                    {description}
-                  </ReactMarkdown>
-                ) : null}
+                {description ? <Description text={description} /> : null}
                 {button && (!images || description) ? (
                   <Grid2
                     textAlign={{

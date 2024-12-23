@@ -1,0 +1,53 @@
+{
+  "title": "Sostenitori",
+  "description": "Quest’anno molte altre aziende del territorio si sono unite al gruppo dei sostenitori, che periodicamente ci forniscono prodotti alimentari freschi, da distribuire alle famiglie in assistenza.",
+  "ringraziamenti": "Siamo davvero grati a queste aziende che, grazie alla loro generosità, ci permettono di portare un sorriso alle persone che si trovano in difficoltà.",
+  "ringraziamenti_img": "/images/ringraziamenti.jpg",
+  "sostenitori": [
+    {
+      "url": "https://www.amadori.it/",
+      "src": "/images/sostenitori-loghi/amadori.png",
+      "alt": "Amadori"
+    },
+    {
+      "url": "https://www.orogel.it/it/chi-siamo/le-nostre-persone",
+      "src": "/images/sostenitori-loghi/fondazionefruttadoroorogel.png",
+      "alt": "Fondazione Fruttadoro Orogel"
+    },
+    {
+      "url": "https://www.martinigruppo.com/",
+      "src": "/images/sostenitori-loghi/martini.png",
+      "alt": "Gruppo Martini"
+    },
+    {
+      "url": "https://www.formercato.it/",
+      "src": "/images/sostenitori-loghi/mercatoortofrutticolocesena.jpg",
+      "alt": "Mercato ortofrutticolo di cesena"
+    },
+    {
+      "url": "https://www.ilpanificiodicamillo.it/",
+      "src": "/images/sostenitori-loghi/camillo.png",
+      "alt": "Camillo"
+    },
+    {
+      "url": "https://www.agrintesa.it/",
+      "src": "/images/sostenitori-loghi/agrintesa.png",
+      "alt": "Agrintesa"
+    },
+    {
+      "url": "https://www.pasticceriaolivi.it/",
+      "src": "/images/sostenitori-loghi/olivi.png",
+      "alt": "Olivi pasticceria caffetteria"
+    },
+    {
+      "url": "https://www.facebook.com/legagine/",
+      "src": "/images/sostenitori-loghi/legagine.jpg",
+      "alt": "Le Gagine"
+    },
+    {
+      "url": "https://vignalilsp.it/",
+      "src": "/images/sostenitori-loghi/vignali.jpg",
+      "alt": "Vignali logistic service provide"
+    }
+  ]
+}

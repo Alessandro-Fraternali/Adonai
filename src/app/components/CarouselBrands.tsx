@@ -1,45 +1,53 @@
 "use client";
 
-import { Box } from "@mui/material";
-import React from "react";
+import { Box, Link } from "@mui/material";
+import React, { JSX } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import { useEffect, useState } from "react";
 
-// Static array of images
-const staticImages = [
-  "/images/venom.jpg",
-  "/images/vader.jpg",
-  "/images/grimmjow.jpg",
-  "/images/bewd.jpg",
-  "/images/blastoise.jpg",
-  "/images/mentor.jpg",
-  "/images/bwgf.jpg",
-];
+interface Immagine {
+  url: string;
+  src: string;
+  alt: string;
+}
 
-const CarouselBrands: React.FC = () => {
-  const items = staticImages.map((image, index) => (
-    <div
-      className="item"
-      key={index}
-      style={{ width: "100%", height: "200px" }}
-    >
-      <img
-        src={image}
-        alt={`Brand ${index + 1}`}
+interface CarouselBrandsProps {
+  images: Immagine[];
+}
+
+const CarouselBrands: React.FC<CarouselBrandsProps> = ({ images }) => {
+  const [items, setItems] = useState<JSX.Element[]>([]);
+
+  useEffect(() => {
+    const carouselItems = images.map((image, index) => (
+      <div
+        className="item"
+        key={index}
         style={{
-          objectFit: "cover",
-          height: "100%",
-          width: "100%",
+          width: "380px",
+          height: "100px",
+          textAlign: "center",
+          backgroundImage: `url(${image.src})`,
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
-      />
-    </div>
-  ));
+      >
+        <Link
+          href={image.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ display: "block", height: "100%" }}
+        ></Link>
+      </div>
+    ));
+    setItems(carouselItems);
+  }, [images]);
 
-  // Define responsive settings for multiple slides
   const responsive = {
-    0: { items: 1 }, // 1 item for small screens
-    768: { items: 2 }, // 2 items for medium screens
-    1024: { items: 4 }, // 3 items for large screens
+    0: { items: 1 },
+    1024: { items: 5 },
   };
 
   return (
@@ -49,7 +57,7 @@ const CarouselBrands: React.FC = () => {
         responsive={responsive}
         infinite
         autoPlay
-        autoPlayInterval={750}
+        autoPlayInterval={850}
         mouseTracking
         renderDotsItem={() => null}
         renderPrevButton={() => null}
