@@ -12,7 +12,7 @@ interface Evento {
 
 interface EventiAnno {
   title: string;
-  [key: string]: Evento | string;
+  eventiAnnuali: Evento[];
 }
 
 interface Eventi {
@@ -24,7 +24,7 @@ interface Eventi {
 
 const eventiData = eventi as Eventi;
 
-export default function Missioni() {
+export default function Eventi() {
   return (
     <>
       <Box>
@@ -32,23 +32,16 @@ export default function Missioni() {
         {Object.entries(eventiData.eventi).map(([annoKey, annoValue]) => (
           <Box key={annoKey} marginBottom={3}>
             <Typography variant="h2">{annoValue.title}</Typography>
-            {Object.entries(annoValue).map(([eventoKey, eventoValue]) => {
-              if (eventoKey === "title") return null;
-              const evento = eventoValue as Evento;
-              return (
-                <>
-                  <Porygon
-                    key={eventoKey}
-                    title={evento.title}
-                    description={evento.description}
-                    images={evento.images}
-                    imageLeft={evento.imageLeft}
-                    button={evento.button}
-                  />{" "}
-                  <br />
-                </>
-              );
-            })}
+            {annoValue.eventiAnnuali.map((evento, index) => (
+              <Porygon
+                key={index}
+                title={evento.title}
+                description={evento.description}
+                images={evento.images}
+                imageLeft={evento.imageLeft}
+                button={evento.button}
+              />
+            ))}
           </Box>
         ))}
       </Box>

@@ -1,53 +1,78 @@
 {
   "title": "Iniziative",
-  "iniziative": {
-    "iniziativa1": {
+  "iniziative": [
+    {
       "title": "Progetto Liberamente",
       "description": "Il progetto “Liberamente” nasce da un’ idea di accogliere, supportare e aiutare concretamente tutte quelle persone che durante un momento di fragilità nella loro vita si ritrovano a dover svolgere le ore socialmente utili. Il progetto consiste in ore laboratoriali in cui si creano gli ogetti che successivamente andranno in esposizione nei nostri mercatini.",
       "images": [
-        "/images/grimmjow.jpg",
-        "/images/venom.jpg",
-        "/images/bewd.jpg",
-        "/images/mentor.jpg"
+        "/images/iniziative/liberamente1.jpeg",
+        "/images/iniziative/liberamente2.jpeg",
+        "/images/iniziative/liberamente3.jpeg",
+        "/images/iniziative/liberamente4.jpeg",
+        "/images/iniziative/liberamente5.jpeg",
+        "/images/iniziative/liberamente6.jpeg",
+        "/images/iniziative/liberamente7.jpeg",
+        "/images/iniziative/liberamente8.jpeg",
+        "/images/iniziative/liberamente9.jpeg"
       ],
       "imageLeft": false,
       "button": "Cliccami"
     },
-    "iniziativa2": {
+    {
       "title": "Solidarietà a Km Zero",
       "description": "Questa iniziativa si propone di raccogliere, in modo gratuito, a domicilio, abiti usati in buono stato per poi smistarli e distribuirli, tutto sempre  gratuitamente alle persone che ne hanno bisogno. \n\n Grazie alla generosità delle persone e alla disponibilità dei nostri volontari abbiamo potuto raggiungere realtà e famiglie, non solo del nostro territorio, ma anche paesi come Senegal, Venezuela e Romania.",
       "images": [
-        "/images/grimmjow.jpg",
-        "/images/venom.jpg",
-        "/images/bewd.jpg",
-        "/images/mentor.jpg"
+        "/images/iniziative/solidarietakm01.jpg",
+        "/images/iniziative/solidarietakm02.jpg",
+        "/images/iniziative/solidarietakm03.jpg",
+        "/images/iniziative/solidarietakm04.jpg"
       ],
       "imageLeft": true,
       "button": "Cliccami 2"
     },
-    "iniziativa3": {
+    {
       "title": "Dona un sorriso",
       "description": "In collaborazione con Asp e Unità di strada, diamo aiuto e supporto alle persone senza fissa dimora del territorio, portando loro cibo, coperte e vestiario e mettendoli in contatto con le strutture della zona che possono offrirgli alloggio e servizi igienici.",
       "images": [
-        "/images/grimmjow.jpg",
-        "/images/venom.jpg",
-        "/images/bewd.jpg",
-        "/images/mentor.jpg"
+        "/images/iniziative/donaunsorriso1.jpeg",
+        "/images/iniziative/donaunsorriso2.jpeg",
+        "/images/iniziative/donaunsorriso3.jpeg",
+        "/images/iniziative/donaunsorriso4.jpeg",
+        "/images/iniziative/donaunsorriso5.jpeg",
+        "/images/iniziative/donaunsorriso6.jpeg",
+        "/images/iniziative/donaunsorriso7.jpeg",
+        "/images/iniziative/donaunsorriso8.jpeg"
       ],
       "imageLeft": false,
       "button": "Cliccami 3"
     },
-    "iniziativa4": {
+    {
       "title": "A tutto Scuola",
       "description": "Dopo aver rivolto il nostro sguardo ai senza fissa dimora, dopo la totale disponibilità ed assistenza alle famiglie. I membri del direttivo hanno deciso di sostenere ed aiutare nello specifico anche i bambini ed in particolare nell’ambito scolastico! \n\n Consapevoli del continuo rincaro dello standard di vita, che non permette più a sempre più famiglie di permettersi di offrire ai propri figli tutto il necessario per l’anno scolastico! Tutti gli associati si sono impegnati a cercare cartolerie disponibili a sostenerci in tale progetto. \n\n 5 cartolerie di Cesena hanno aderito a questo progetto esponendo all’interno un cartone per la raccolta di materiale scolastico e ciclicamente un associato incaricato ha fatto il giro delle cartolerie raccogliendo il materiale donato. Questa iniziativa è durata da metà luglio fino a fine settembre. \n\n Per mezzo di questa raccolta abbiamo assistito circa 20 bambini/famiglie!",
       "images": [
-        "/images/grimmjow.jpg",
-        "/images/venom.jpg",
-        "/images/bewd.jpg",
-        "/images/mentor.jpg"
+        "/images/iniziative/atuttoscuola1.jpeg",
+        "/images/iniziative/atuttoscuola2.jpeg",
+        "/images/iniziative/atuttoscuola3.jpeg",
+        "/images/iniziative/atuttoscuola4.jpeg",
+        "/images/iniziative/atuttoscuola5.jpeg",
+        "/images/iniziative/atuttoscuola6.jpeg",
+        "/images/iniziative/atuttoscuola7.jpeg",
+        "/images/iniziative/atuttoscuola8.jpeg",
+        "/images/iniziative/atuttoscuola9.jpeg",
+        "/images/iniziative/atuttoscuola10.jpeg",
+        "/images/iniziative/atuttoscuola11.jpeg",
+        "/images/iniziative/atuttoscuola12.jpeg",
+        "/images/iniziative/atuttoscuola13.jpeg",
+        "/images/iniziative/atuttoscuola14.jpeg",
+        "/images/iniziative/atuttoscuola15.jpeg",
+        "/images/iniziative/atuttoscuola16.jpeg",
+        "/images/iniziative/atuttoscuola17.jpg",
+        "/images/iniziative/atuttoscuola18.jpg",
+        "/images/iniziative/atuttoscuola19.jpg",
+        "/images/iniziative/atuttoscuola20.jpg"
       ],
       "imageLeft": true,
       "button": "Cliccami 4"
     }
-  }
+  ]
 }
