@@ -3,6 +3,7 @@ import Jumbotron from "./components/Jumbotron";
 import Porygon from "./components/Porygon";
 import homepage from "./texts/homepage.json";
 import Reader from "./components/Reader";
+import Player from "./components/Player";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       />
       <Box padding={3}>
         <Reader document="/emergenzaalluvione.pdf" />
-
+        <Player />
         <Porygon
           title="ADONAI"
           description="La cucaracha"
