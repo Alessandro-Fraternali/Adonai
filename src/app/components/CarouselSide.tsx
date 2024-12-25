@@ -5,30 +5,41 @@ import React from "react";
 import Image from "next/image";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import Streamer from "./Streamer"; // Assicurati di importare il componente Streamer
 
 interface CarouselSideProps {
   images?: Array<string>;
 }
 
 const CarouselSide: React.FC<CarouselSideProps> = ({ images }) => {
-  const items = images?.map((image, index) => (
-    <div
-      className="item"
-      key={index}
-      style={{ width: "100%", aspectRatio: 1 / 1 }}
-    >
-      <Image
-        src={image}
-        alt={`Slide ${index + 1}`}
-        fill
-        style={{
-          objectFit: "contain",
-          top: 0,
-          left: 0,
-        }}
-      />
-    </div>
-  ));
+  const items = images?.map((image, index) => {
+    // Controlla se l'immagine è un link di YouTube
+    const isYouTubeLink =
+      image.includes("youtube.com") || image.includes("youtu.be");
+
+    return (
+      <div
+        className="item"
+        key={index}
+        style={{ width: "100%", aspectRatio: 1 / 1 }}
+      >
+        {isYouTubeLink ? (
+          <Streamer link={image} />
+        ) : (
+          <Image
+            src={image}
+            alt={`Slide ${index + 1}`}
+            fill
+            style={{
+              objectFit: "contain",
+              top: 0,
+              left: 0,
+            }}
+          />
+        )}
+      </div>
+    );
+  });
 
   return (
     <Box sx={{ width: "100%" }}>

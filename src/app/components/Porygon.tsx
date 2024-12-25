@@ -2,7 +2,8 @@ import { Box, Button, Grid2, Link, Typography } from "@mui/material";
 import Image from "next/image";
 import CarouselSide from "./CarouselSide";
 import Description from "./Description";
-import Player from "./Player";
+import Player from "./Streamer";
+import Streamer from "./Streamer";
 
 interface ButtonProps {
   text: string;
@@ -11,19 +12,19 @@ interface ButtonProps {
 interface PorygonProps {
   title?: string;
   description?: string;
-  images?: Array<string>;
+  gallery?: Array<string>;
   video?: string;
   button?: ButtonProps;
-  imageLeft?: boolean;
+  galleryLeft?: boolean;
 }
 
 export default function Porygon({
   title,
   description,
-  images,
+  gallery,
   video,
   button,
-  imageLeft,
+  galleryLeft,
 }: PorygonProps) {
   return (
     <Box sx={{ flexGrow: 1, width: "90%", margin: "auto" }}>
@@ -39,7 +40,7 @@ export default function Porygon({
             </Typography>
           </Grid2>
         ) : null}
-        {description || button || images ? (
+        {description || button || gallery ? (
           <Grid2
             size={{ xs: 12 }}
             gap={2}
@@ -47,23 +48,23 @@ export default function Porygon({
             sx={{
               flexDirection: {
                 xs: "column",
-                md: imageLeft ? "row-reverse" : "row",
+                md: galleryLeft ? "row-reverse" : "row",
               },
             }}
           >
             {description ? (
               <Grid2
                 bgcolor={"rgba(128, 128, 128, 0.2)"}
-                size={{ xs: 12, md: images ? 7 : 12 }}
+                size={{ xs: 12, md: gallery ? 7 : 12 }}
               >
                 {description ? <Description text={description} /> : null}
-                {button && (!images || description) ? (
+                {button && (!gallery || description) ? (
                   <Grid2
                     textAlign={{
                       xs: "center",
-                      md: !images && description ? "center" : "left",
+                      md: !gallery && description ? "center" : "left",
                     }}
-                    marginLeft={!images && description ? 0 : 5}
+                    marginLeft={!gallery && description ? 0 : 5}
                     marginTop={description ? 3 : 0}
                   >
                     <Button variant="contained">
@@ -75,7 +76,7 @@ export default function Porygon({
                 ) : null}
               </Grid2>
             ) : null}
-            {images ? (
+            {gallery ? (
               <Grid2
                 bgcolor={"rgba(0, 128, 0, 0.07)"}
                 size={{ xs: 12, md: description ? 5 : 12 }}
@@ -89,44 +90,30 @@ export default function Porygon({
                     margin: "auto",
                   }}
                 >
-                  {images.length === 1 ? (
-                    <Image
-                      src={images[0]}
-                      alt="Associazione ADONAI"
-                      fill
-                      style={{
-                        objectFit: "contain",
-                        top: 0,
-                        left: 0,
-                      }}
-                    />
+                  {gallery.length === 1 ? (
+                    gallery[0].includes("youtube.") ? (
+                      <Streamer link={gallery[0]} />
+                    ) : (
+                      <Image
+                        src={gallery[0]}
+                        alt="Associazione ADONAI"
+                        fill
+                        style={{
+                          objectFit: "contain",
+                          top: 0,
+                          left: 0,
+                        }}
+                      />
+                    )
                   ) : (
-                    <CarouselSide images={images} />
+                    <CarouselSide images={gallery} />
                   )}
-                </Box>
-              </Grid2>
-            ) : null}
-            {video ? (
-              <Grid2
-                bgcolor={"rgba(0, 128, 0, 0.07)"}
-                size={{ xs: 12, md: description ? 5 : 12 }}
-              >
-                <Box
-                  sx={{
-                    width: "100%",
-                    minHeight: "380px",
-                    position: "relative",
-                    overflow: "hidden",
-                    margin: "auto",
-                  }}
-                >
-                  <Player />
                 </Box>
               </Grid2>
             ) : null}
           </Grid2>
         ) : null}
-        {button && images && !description ? (
+        {button && gallery && !description ? (
           <Grid2
             bgcolor={"rgba(255, 255, 0, 0.2)"}
             size={{ xs: 12 }}

@@ -3,7 +3,7 @@ import Jumbotron from "./components/Jumbotron";
 import Porygon from "./components/Porygon";
 import homepage from "./texts/homepage.json";
 import Reader from "./components/Reader";
-import Player from "./components/Player";
+import Player from "./components/Streamer";
 
 export default function Home() {
   return (

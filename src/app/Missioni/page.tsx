@@ -10,8 +10,8 @@ interface ButtonProps {
 type Mission = {
   title: string;
   description: string;
-  images: string[];
-  imageLeft: boolean;
+  gallery: string[];
+  galleryLeft: boolean;
   button?: ButtonProps;
 };
 
@@ -33,8 +33,8 @@ export default function Missioni() {
               <Porygon
                 title={missioni.title}
                 description={missioni.description}
-                images={missioni.images}
-                imageLeft={missioni.imageLeft}
+                gallery={missioni.gallery}
+                galleryLeft={missioni.galleryLeft}
                 button={missioni.button}
               />
               <br />

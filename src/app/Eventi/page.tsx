@@ -9,9 +9,8 @@ interface ButtonProps {
 interface Evento {
   title: string;
   description: string;
-  images?: Array<string>;
-  video?: string;
-  imageLeft: boolean;
+  gallery?: Array<string>;
+  galleryLeft: boolean;
   button?: ButtonProps;
 }
 
@@ -42,9 +41,8 @@ export default function Eventi() {
                 key={index}
                 title={evento.title}
                 description={evento.description}
-                images={evento.images}
-                video={evento.video}
-                imageLeft={evento.imageLeft}
+                gallery={evento.gallery}
+                galleryLeft={evento.galleryLeft}
                 button={evento.button}
               />
             ))}

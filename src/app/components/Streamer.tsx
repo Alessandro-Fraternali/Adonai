@@ -1,11 +1,15 @@
 import React from "react";
 
-const Player = () => {
+interface StreamerProps {
+  link: string;
+}
+
+const Streamer: React.FC<StreamerProps> = ({ link }) => {
   return (
     <iframe
       width="100%"
       height="315"
-      src="https://www.youtube.com/embed/kdWM3OLOHuk"
+      src={link}
       title="YouTube video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
@@ -13,4 +17,4 @@ const Player = () => {
   );
 };
 
-export default Player;
+export default Streamer;

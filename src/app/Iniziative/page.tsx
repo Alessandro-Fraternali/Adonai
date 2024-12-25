@@ -8,8 +8,8 @@ interface ButtonProps {
 interface Initiative {
   title: string;
   description: string;
-  images: string[];
-  imageLeft: boolean;
+  gallery: string[];
+  galleryLeft: boolean;
   button?: ButtonProps;
 }
 
@@ -31,8 +31,8 @@ export default function Iniziative() {
               <Porygon
                 title={initiative.title}
                 description={initiative.description}
-                images={initiative.images}
-                imageLeft={initiative.imageLeft}
+                gallery={initiative.gallery}
+                galleryLeft={initiative.galleryLeft}
                 button={initiative.button}
               />
               <br />
