@@ -10,10 +10,6 @@ interface Initiative {
   button: string;
 }
 
-interface Initiatives {
-  [key: string]: Initiative;
-}
-
 interface IniziativeData {
   title: string;
   iniziative: Initiative[];
