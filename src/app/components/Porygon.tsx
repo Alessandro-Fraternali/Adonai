@@ -2,7 +2,6 @@ import { Box, Button, Grid2, Link, Typography } from "@mui/material";
 import Image from "next/image";
 import CarouselSide from "./CarouselSide";
 import Description from "./Description";
-import Player from "./Streamer";
 import Streamer from "./Streamer";
 
 interface ButtonProps {

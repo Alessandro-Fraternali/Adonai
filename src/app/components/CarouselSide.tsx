@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import Streamer from "./Streamer"; // Assicurati di importare il componente Streamer
+import Streamer from "./Streamer";
 
 interface CarouselSideProps {
   images?: Array<string>;
@@ -13,7 +13,6 @@ interface CarouselSideProps {
 
 const CarouselSide: React.FC<CarouselSideProps> = ({ images }) => {
   const items = images?.map((image, index) => {
-    // Controlla se l'immagine è un link di YouTube
     const isYouTubeLink =
       image.includes("youtube.com") || image.includes("youtu.be");
 
