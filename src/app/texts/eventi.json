@@ -138,7 +138,7 @@
           "galleryLeft": false,
           "button": {
             "text": "Guarda il video",
-            "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+            "link": "https://www.youtube.com/embed/pS-ElBFPTTA"
           }
         }
       ]

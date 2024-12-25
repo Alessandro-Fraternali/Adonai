@@ -65,7 +65,12 @@ export default function Porygon({
                     marginTop={description ? 3 : 0}
                   >
                     <Button variant="contained">
-                      <Link href={button.link} target="_blank">
+                      <Link
+                        href={button.link}
+                        target="_blank"
+                        color="#ffffff"
+                        sx={{ textDecoration: "none" }}
+                      >
                         {button.text}
                       </Link>
                     </Button>
