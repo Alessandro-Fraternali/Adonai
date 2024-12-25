@@ -12,7 +12,6 @@ interface PorygonProps {
   title?: string;
   description?: string;
   gallery?: Array<string>;
-  video?: string;
   button?: ButtonProps;
   galleryLeft?: boolean;
 }
@@ -21,7 +20,6 @@ export default function Porygon({
   title,
   description,
   gallery,
-  video,
   button,
   galleryLeft,
 }: PorygonProps) {
