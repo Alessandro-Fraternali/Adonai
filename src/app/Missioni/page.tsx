@@ -2,12 +2,17 @@ import { Box } from "@mui/material";
 import missioni from "../texts/missioni.json";
 import Porygon from "../components/Porygon";
 
+interface ButtonProps {
+  text: string;
+  link: string;
+}
+
 type Mission = {
   title: string;
   description: string;
   images: string[];
   imageLeft: boolean;
-  button: string;
+  button?: ButtonProps;
 };
 
 interface MissioniData {

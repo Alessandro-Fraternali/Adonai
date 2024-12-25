@@ -1,13 +1,19 @@
-import { Box, Button, Grid2, Typography } from "@mui/material";
+import { Box, Button, Grid2, Link, Typography } from "@mui/material";
 import Image from "next/image";
 import CarouselSide from "./CarouselSide";
 import Description from "./Description";
+import Player from "./Player";
 
+interface ButtonProps {
+  text: string;
+  link: string;
+}
 interface PorygonProps {
   title?: string;
   description?: string;
   images?: Array<string>;
-  button?: string;
+  video?: string;
+  button?: ButtonProps;
   imageLeft?: boolean;
 }
 
@@ -15,6 +21,7 @@ export default function Porygon({
   title,
   description,
   images,
+  video,
   button,
   imageLeft,
 }: PorygonProps) {
@@ -59,7 +66,11 @@ export default function Porygon({
                     marginLeft={!images && description ? 0 : 5}
                     marginTop={description ? 3 : 0}
                   >
-                    <Button variant="contained">{button}</Button>
+                    <Button variant="contained">
+                      <Link href={button.link} target="_blank">
+                        {button.text}
+                      </Link>
+                    </Button>
                   </Grid2>
                 ) : null}
               </Grid2>
@@ -95,6 +106,24 @@ export default function Porygon({
                 </Box>
               </Grid2>
             ) : null}
+            {video ? (
+              <Grid2
+                bgcolor={"rgba(0, 128, 0, 0.07)"}
+                size={{ xs: 12, md: description ? 5 : 12 }}
+              >
+                <Box
+                  sx={{
+                    width: "100%",
+                    minHeight: "380px",
+                    position: "relative",
+                    overflow: "hidden",
+                    margin: "auto",
+                  }}
+                >
+                  <Player />
+                </Box>
+              </Grid2>
+            ) : null}
           </Grid2>
         ) : null}
         {button && images && !description ? (
@@ -105,7 +134,9 @@ export default function Porygon({
             justifyContent={"center"}
             marginTop={3}
           >
-            <Button variant="contained">{button}</Button>
+            <Link href={button.link} target="_blank" color="error">
+              {button.text}
+            </Link>
           </Grid2>
         ) : null}
       </Grid2>

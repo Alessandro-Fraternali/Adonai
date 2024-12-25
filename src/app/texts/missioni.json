@@ -16,8 +16,7 @@
         "/images/missioni/alluvioneer20239.jpg",
         "/images/missioni/alluvioneer202310.jpg"
       ],
-      "imageLeft": false,
-      "button": "Cliccami"
+      "imageLeft": false
     },
     {
       "title": "Terremoto in Turchia febbraio 2023",
@@ -34,8 +33,7 @@
         "/images/missioni/terremototurchia9.jpg",
         "/images/missioni/terremototurchia10.jpg"
       ],
-      "imageLeft": true,
-      "button": "Cliccami 2"
+      "imageLeft": true
     },
     {
       "title": "Guerra in Ucraina Gennaio 2022",
@@ -49,8 +47,7 @@
         "/images/missioni/guerraucraina6.jpg",
         "/images/missioni/guerraucraina7.jpg"
       ],
-      "imageLeft": false,
-      "button": "Cliccami 3"
+      "imageLeft": false
     },
     {
       "title": "Sostegno in Kosovo Marzo 2022",
@@ -71,8 +68,7 @@
         "/images/missioni/kosovo202213.jpg",
         "/images/missioni/kosovo202214.jpg"
       ],
-      "imageLeft": true,
-      "button": "Cliccami 4"
+      "imageLeft": true
     }
   ]
 }

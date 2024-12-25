@@ -16,8 +16,7 @@
             "/images/eventi/postalluvione20236.jpeg",
             "/images/eventi/postalluvione20237.jpeg"
           ],
-          "imageLeft": false,
-          "button": "Cliccami"
+          "imageLeft": false
         },
         {
           "title": "ANNO 2023",
@@ -41,8 +40,7 @@
             "/images/eventi/concerto202316.jpg",
             "/images/eventi/concerto202317.jpg"
           ],
-          "imageLeft": true,
-          "button": "Cliccami"
+          "imageLeft": true
         }
       ]
     },
@@ -59,8 +57,7 @@
             "/images/eventi/orafelice4.jpg",
             "/images/eventi/orafelice5.jpg"
           ],
-          "imageLeft": false,
-          "button": "Cliccami 2"
+          "imageLeft": false
         },
         {
           "title": "ANNO 2022",
@@ -73,8 +70,7 @@
             "/images/eventi/pasqua20225.jpg",
             "/images/eventi/pasqua20226.jpg"
           ],
-          "imageLeft": true,
-          "button": "Cliccami 3"
+          "imageLeft": true
         }
       ]
     },
@@ -90,8 +86,7 @@
             "/images/eventi/cenasolidale20213.jpg",
             "/images/eventi/cenasolidale20214.jpg"
           ],
-          "imageLeft": false,
-          "button": "Cliccami 2"
+          "imageLeft": false
         },
         {
           "title": "ANNO 2021",
@@ -104,8 +99,7 @@
             "/images/eventi/prematuriamo5.jpeg",
             "/images/eventi/prematuriamo6.jpeg"
           ],
-          "imageLeft": true,
-          "button": "Cliccami 3"
+          "imageLeft": true
         }
       ]
     },
@@ -115,15 +109,8 @@
         {
           "title": "ANNO 2020",
           "description": "Il 19 ottobre 2020 l’Associazione **“Casa Famiglia Adonai”** ha organizzato un concerto di beneficenza con la cantante cristiana evangelica **“Sara Taccardi”**. Lo scopo di questo concerto ad appena un anno dalla costituzione come associazione era quello di parlare dell’associazione e farci conoscere nel territorio di Cesena e limitrofi.",
-          "images": [
-            "VIDEO",
-            "/images/grimmjow.jpg",
-            "/images/venom.jpg",
-            "/images/bewd.jpg",
-            "/images/mentor.jpg"
-          ],
-          "imageLeft": false,
-          "button": "Cliccami 2"
+          "video": "https://www.youtube.com/embed/kdWM3OLOHuk",
+          "imageLeft": false
         }
       ]
     },
@@ -139,15 +126,17 @@
             "/images/eventi/trasformailtuodolore3.jpg",
             "/images/eventi/trasformailtuodolore4.jpg"
           ],
-          "imageLeft": true,
-          "button": "Cliccami 2"
+          "imageLeft": true
         },
         {
           "title": "ANNO 2019",
           "description": "A Settembre 2019 **“Christian music meeting”** è stato il primo concerto cristiano evangelico sponsorizzato dall’associazione **“Casa Famiglia Adonai”** per presentare e fare conoscere il nostro progetto alle chiese locali. Come ospite d’onore è stato invitato il cantautore evangelico **“Angelo Maugieri”**.",
-          "images": ["/images/eventi/concertocristiano20191.jpeg", "VIDEO"],
+          "images": ["/images/eventi/concertocristiano20191.jpeg"],
           "imageLeft": false,
-          "button": "Cliccami 2"
+          "button": {
+            "text": "Guarda il video",
+            "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+          }
         }
       ]
     }

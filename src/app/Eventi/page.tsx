@@ -2,12 +2,17 @@ import { Box, Typography } from "@mui/material";
 import Porygon from "../components/Porygon";
 import eventi from "../texts/eventi.json";
 
+interface ButtonProps {
+  text: string;
+  link: string;
+}
 interface Evento {
   title: string;
   description: string;
-  images: Array<string>;
+  images?: Array<string>;
+  video?: string;
   imageLeft: boolean;
-  button: string;
+  button?: ButtonProps;
 }
 
 interface EventiAnno {
@@ -38,6 +43,7 @@ export default function Eventi() {
                 title={evento.title}
                 description={evento.description}
                 images={evento.images}
+                video={evento.video}
                 imageLeft={evento.imageLeft}
                 button={evento.button}
               />

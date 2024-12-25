@@ -2,6 +2,7 @@
 
 import { Box } from "@mui/material";
 import React from "react";
+import Image from "next/image";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -16,10 +17,15 @@ const CarouselSide: React.FC<CarouselSideProps> = ({ images }) => {
       key={index}
       style={{ width: "100%", aspectRatio: 1 / 1 }}
     >
-      <img
+      <Image
         src={image}
         alt={`Slide ${index + 1}`}
-        style={{ objectFit: "cover", height: "100%", width: "100%" }}
+        fill
+        style={{
+          objectFit: "contain",
+          top: 0,
+          left: 0,
+        }}
       />
     </div>
   ));

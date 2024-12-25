@@ -15,8 +15,7 @@
         "/images/iniziative/liberamente8.jpeg",
         "/images/iniziative/liberamente9.jpeg"
       ],
-      "imageLeft": false,
-      "button": "Cliccami"
+      "imageLeft": false
     },
     {
       "title": "Solidarietà a Km Zero",
@@ -27,8 +26,7 @@
         "/images/iniziative/solidarietakm03.jpg",
         "/images/iniziative/solidarietakm04.jpg"
       ],
-      "imageLeft": true,
-      "button": "Cliccami 2"
+      "imageLeft": true
     },
     {
       "title": "Dona un sorriso",
@@ -43,8 +41,7 @@
         "/images/iniziative/donaunsorriso7.jpeg",
         "/images/iniziative/donaunsorriso8.jpeg"
       ],
-      "imageLeft": false,
-      "button": "Cliccami 3"
+      "imageLeft": false
     },
     {
       "title": "A tutto Scuola",
@@ -71,8 +68,7 @@
         "/images/iniziative/atuttoscuola19.jpg",
         "/images/iniziative/atuttoscuola20.jpg"
       ],
-      "imageLeft": true,
-      "button": "Cliccami 4"
+      "imageLeft": true
     }
   ]
 }

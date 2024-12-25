@@ -3,7 +3,7 @@ import React from "react";
 const Player = () => {
   return (
     <iframe
-      width="560"
+      width="100%"
       height="315"
       src="https://www.youtube.com/embed/kdWM3OLOHuk"
       title="YouTube video player"

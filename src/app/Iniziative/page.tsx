@@ -1,13 +1,16 @@
 import { Box } from "@mui/material";
 import Porygon from "../components/Porygon";
 import iniziative from "../texts/iniziative.json";
-
+interface ButtonProps {
+  text: string;
+  link: string;
+}
 interface Initiative {
   title: string;
   description: string;
   images: string[];
   imageLeft: boolean;
-  button: string;
+  button?: ButtonProps;
 }
 
 interface IniziativeData {

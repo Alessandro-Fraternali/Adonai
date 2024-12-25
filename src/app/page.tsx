@@ -21,7 +21,6 @@ export default function Home() {
           title="ADONAI"
           description="La cucaracha"
           images={["/images/bwgf.jpg"]}
-          button="Sono il bottone"
         />
       </Box>
     </Box>
