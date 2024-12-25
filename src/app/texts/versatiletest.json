@@ -1,93 +1,117 @@
 {
   "title": "Contattaci / test componenti",
-  "versatili": {
-    "missione1": {
+  "versatili": [
+    {
       "title": "Emergenza Alluvione",
       "description": "Associazione casa famiglia Adonai decide nel febbraio 2023 di mettere a disposizione tutte le risorse per far fronte all’emergenza che si era venuta a creare ossia il terremoto in Turchia. \n\n Grazie al materiale raccolto attraverso il progetto solidarietà a Km 0 la nostra associazione decide di collaborare con l’associazione **“Help”** di Sassuolo spedendo con un furgone tutto il materiale a nostra disposizione per poi essere caricato su un bilico con destinazione Turchia! \n\n Un ringraziamento va a tutte le famiglie di Cesena che hanno collaborato nel regalare il necessario alla nostra Associazione ed un grazie chi a tutt’oggi ci sostiene e a coloro che lo faranno in futuro!",
-      "images": ["/images/mentor.jpg", "/images/bewd.jpg"],
+      "gallery": ["/images/mentor.jpg", "/images/bewd.jpg"],
       "galleryLeft": false,
-      "button": "Cliccami"
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+      }
     },
-    "missione2": {
+    {
       "title": "Raccolta Fondi",
       "description": "Per far fronte a questa emergenza che ha visto tutti noi coinvolti, il Comune di Cesena si è mosso mettendo a disposizione qualsiasi tipo di alloggio libero per accogliere quanti scappavano dalla guerra. L’Associazione Casa Famiglia ha raccolto generi alimentari, beni di prima necessità e soprattutto vestiario. Diverse aziende del territorio e non, si sono unite alla nostra raccolta fornendoci tutto il necessario per questa missione. La raccolta è durata circa due mesi. Un altro mese è servito a preparare gli scatoloni e i sacchi. Infine l’8 aprile 2022 è partito il primo camion (un bilico) pieno di aiuti umanitari destinazione Romania al confine con l’Ucraina e successivamente ha raggiunto l’Ucraina.",
-      "images": ["/images/bewd.jpg"],
+      "gallery": ["/images/bewd.jpg"],
       "galleryLeft": true
     },
-    "missione3": {
+    {
       "title": "Pulizia delle Spiagge",
       "description": "Associazione casa famiglia Adonai decide nel febbraio 2023 di mettere a disposizione tutte le risorse per far fronte all’emergenza che si era venuta a creare ossia il terremoto in Turchia. \n\n Grazie al materiale raccolto attraverso il progetto solidarietà a Km 0 la nostra associazione decide di collaborare con l’associazione **“Help”** di Sassuolo spedendo con un furgone tutto il materiale a nostra disposizione per poi essere caricato su un bilico con destinazione Turchia! \n\n Un ringraziamento va a tutte le famiglie di Cesena che hanno collaborato nel regalare il necessario alla nostra Associazione ed un grazie chi a tutt’oggi ci sostiene e a coloro che lo faranno in futuro!",
-      "button": "Partecipa"
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+      }
     },
-    "missione4": {
+    {
       "title": "Distribuzione Pasti",
-      "images": ["/images/wallpaperODST.jpg"],
+      "gallery": ["/images/wallpaperODST.jpg"],
       "galleryLeft": false,
-      "button": "Dona Ora"
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+      }
     },
-    "missione5": {
+    {
       "title": "Volontariato in Ospedale"
     },
-    "missione6": {
+    {
       "description": "Il 14 dicembre 2019 l’Associazione **“Casa Famiglia Adonai”** a 6 mesi dalla sua nascita ha deciso di convocare i Dottori **Sandro e Martina Gianneramo** facenti parte, come associati, dell’associazione **“JOY AND FRIENDS”**. \n\n L’evento aveva come titolo: **“TRASFORMA IL TUO DOLORE, QUELLO CHE PER TE SEMBRA LA FINE, PER DIO PUÒ ESSERE UN NUOVO INIZIO”**. \n\n Con la conferenza si è messo a confronto la fede e la medicina e come “Il Signore può trasformare le nostre vite quando ormai ci sembra di aver raggiunto il fondo”. \n\n Al termine della conferenza abbiamo avuto modo di far conoscere la nostra associazione alle persone presenti e parlare un po’ di noi.",
-      "button": "Contattaci"
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+      }
     },
-    "missione7": {
-      "images": ["/images/blastoise.jpg"],
+    {
+      "gallery": ["/images/blastoise.jpg"],
       "galleryLeft": true,
-      "button": "Scopri di più"
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+      }
     },
-    "missione8": {
+    {
       "title": "Giornata di Sensibilizzazione",
       "description": "Associazione casa famiglia Adonai decide nel febbraio 2023 di mettere a disposizione tutte le risorse per far fronte all’emergenza che si era venuta a creare ossia il terremoto in Turchia. \n\n Grazie al materiale raccolto attraverso il progetto solidarietà a Km 0 la nostra associazione decide di collaborare con l’associazione **“Help”** di Sassuolo spedendo con un furgone tutto il materiale a nostra disposizione per poi essere caricato su un bilico con destinazione Turchia! \n\n Un ringraziamento va a tutte le famiglie di Cesena che hanno collaborato nel regalare il necessario alla nostra Associazione ed un grazie chi a tutt’oggi ci sostiene e a coloro che lo faranno in futuro!"
     },
-    "missione9": {
+    {
       "title": "Supporto Psicologico",
-      "images": ["/images/grimmjow.jpg"]
+      "gallery": ["/images/grimmjow.jpg"]
     },
-    "missione10": {
+    {
       "description": "Associazione casa famiglia Adonai decide nel febbraio 2023 di mettere a disposizione tutte le risorse per far fronte all’emergenza che si era venuta a creare ossia il terremoto in Turchia. \n\n Grazie al materiale raccolto attraverso il progetto solidarietà a Km 0 la nostra associazione decide di collaborare con l’associazione **“Help”** di Sassuolo spedendo con un furgone tutto il materiale a nostra disposizione per poi essere caricato su un bilico con destinazione Turchia! \n\n Un ringraziamento va a tutte le famiglie di Cesena che hanno collaborato nel regalare il necessario alla nostra Associazione ed un grazie chi a tutt’oggi ci sostiene e a coloro che lo faranno in futuro!"
     },
-    "missione11": {
+    {
       "title": "Attività Ricreative",
       "description": "Il 14 dicembre 2019 l’Associazione **“Casa Famiglia Adonai”** a 6 mesi dalla sua nascita ha deciso di convocare i Dottori **Sandro e Martina Gianneramo** facenti parte, come associati, dell’associazione **“JOY AND FRIENDS”**. \n\n L’evento aveva come titolo: **“TRASFORMA IL TUO DOLORE, QUELLO CHE PER TE SEMBRA LA FINE, PER DIO PUÒ ESSERE UN NUOVO INIZIO”**. \n\n Con la conferenza si è messo a confronto la fede e la medicina e come “Il Signore può trasformare le nostre vite quando ormai ci sembra di aver raggiunto il fondo”. \n\n Al termine della conferenza abbiamo avuto modo di far conoscere la nostra associazione alle persone presenti e parlare un po’ di noi.",
-      "images": ["/images/bwgf.jpg"],
+      "gallery": ["/images/bwgf.jpg"],
       "galleryLeft": false,
-      "button": "Partecipa"
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+      }
     },
-    "missione12": {
+    {
       "title": "Corsi di Formazione",
       "description": "Il 14 dicembre 2019 l’Associazione **“Casa Famiglia Adonai”** a 6 mesi dalla sua nascita ha deciso di convocare i Dottori **Sandro e Martina Gianneramo** facenti parte, come associati, dell’associazione **“JOY AND FRIENDS”**. \n\n L’evento aveva come titolo: **“TRASFORMA IL TUO DOLORE, QUELLO CHE PER TE SEMBRA LA FINE, PER DIO PUÒ ESSERE UN NUOVO INIZIO”**. \n\n Con la conferenza si è messo a confronto la fede e la medicina e come “Il Signore può trasformare le nostre vite quando ormai ci sembra di aver raggiunto il fondo”. \n\n Al termine della conferenza abbiamo avuto modo di far conoscere la nostra associazione alle persone presenti e parlare un po’ di noi."
     },
-    "missione13": {
-      "images": ["/images/igris.jpg"],
-      "button": "Iscriviti"
+    {
+      "gallery": ["/images/igris.jpg"],
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+      }
     },
-    "missione14": {
+    {
       "description": "Per far fronte a questa emergenza che ha visto tutti noi coinvolti, il Comune di Cesena si è mosso mettendo a disposizione qualsiasi tipo di alloggio libero per accogliere quanti scappavano dalla guerra. L’Associazione Casa Famiglia ha raccolto generi alimentari, beni di prima necessità e soprattutto vestiario. Diverse aziende del territorio e non, si sono unite alla nostra raccolta fornendoci tutto il necessario per questa missione. La raccolta è durata circa due mesi. Un altro mese è servito a preparare gli scatoloni e i sacchi. Infine l’8 aprile 2022 è partito il primo camion (un bilico) pieno di aiuti umanitari destinazione Romania al confine con l’Ucraina e successivamente ha raggiunto l’Ucraina."
     },
-    "missione15": {
+    {
       "title": "Evento di Raccolta",
       "description": "Associazione casa famiglia Adonai decide nel febbraio 2023 di mettere a disposizione tutte le risorse per far fronte all’emergenza che si era venuta a creare ossia il terremoto in Turchia. \n\n Grazie al materiale raccolto attraverso il progetto solidarietà a Km 0 la nostra associazione decide di collaborare con l’associazione **“Help”** di Sassuolo spedendo con un furgone tutto il materiale a nostra disposizione per poi essere caricato su un bilico con destinazione Turchia! \n\n Un ringraziamento va a tutte le famiglie di Cesena che hanno collaborato nel regalare il necessario alla nostra Associazione ed un grazie chi a tutt’oggi ci sostiene e a coloro che lo faranno in futuro!"
     },
-    "missione16": {
-      "images": ["/images/jiraiya.jpg"]
+    {
+      "gallery": ["/images/jiraiya.jpg"]
     },
-    "missione17": {
+    {
       "title": "Progetto di Inclusione",
       "description": "Il 14 dicembre 2019 l’Associazione **“Casa Famiglia Adonai”** a 6 mesi dalla sua nascita ha deciso di convocare i Dottori **Sandro e Martina Gianneramo** facenti parte, come associati, dell’associazione **“JOY AND FRIENDS”**. \n\n L’evento aveva come titolo: **“TRASFORMA IL TUO DOLORE, QUELLO CHE PER TE SEMBRA LA FINE, PER DIO PUÒ ESSERE UN NUOVO INIZIO”**. \n\n Con la conferenza si è messo a confronto la fede e la medicina e come “Il Signore può trasformare le nostre vite quando ormai ci sembra di aver raggiunto il fondo”. \n\n Al termine della conferenza abbiamo avuto modo di far conoscere la nostra associazione alle persone presenti e parlare un po’ di noi.",
-      "images": ["/images/vader.jpg"],
+      "gallery": ["/images/vader.jpg"],
       "galleryLeft": true
     },
-    "missione18": {
+    {
       "title": "Campagna di Sensibilizzazione",
       "description": "Per far fronte a questa emergenza che ha visto tutti noi coinvolti, il Comune di Cesena si è mosso mettendo a disposizione qualsiasi tipo di alloggio libero per accogliere quanti scappavano dalla guerra. L’Associazione Casa Famiglia ha raccolto generi alimentari, beni di prima necessità e soprattutto vestiario. Diverse aziende del territorio e non, si sono unite alla nostra raccolta fornendoci tutto il necessario per questa missione. La raccolta è durata circa due mesi. Un altro mese è servito a preparare gli scatoloni e i sacchi. Infine l’8 aprile 2022 è partito il primo camion (un bilico) pieno di aiuti umanitari destinazione Romania al confine con l’Ucraina e successivamente ha raggiunto l’Ucraina.",
-      "button": "Scopri di più"
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/watch?v=pS-ElBFPTTA"
+      }
     },
-    "missione19": {
+    {
       "title": "Supporto alle Famiglie",
-      "images": ["/images/venom.jpg"],
+      "gallery": ["/images/venom.jpg"],
       "galleryLeft": false
     }
-  }
+  ]
 }

@@ -6,8 +6,8 @@ import Player from "./Streamer";
 import Streamer from "./Streamer";
 
 interface ButtonProps {
-  text: string;
-  link: string;
+  text?: string;
+  link?: string;
 }
 interface PorygonProps {
   title?: string;
