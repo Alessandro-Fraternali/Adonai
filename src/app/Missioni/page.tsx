@@ -5,18 +5,14 @@ import Porygon from "../components/Porygon";
 type Mission = {
   title: string;
   description: string;
-  images: Array<string>;
+  images: string[];
   imageLeft: boolean;
   button: string;
 };
 
-type Missions = {
-  [key: string]: Mission;
-};
-
 interface MissioniData {
   title: string;
-  missioni: Missions;
+  missioni: Mission[];
 }
 
 const missioniData: MissioniData = missioni;
@@ -26,8 +22,7 @@ export default function Missioni() {
     <>
       <Box>
         <h1>{missioniData.title}</h1>
-        {Object.keys(missioniData.missioni).map((key) => {
-          const missioni = missioniData.missioni[key];
+        {Object.entries(missioniData.missioni).map(([key, missioni]) => {
           return (
             <Box key={key}>
               <Porygon
