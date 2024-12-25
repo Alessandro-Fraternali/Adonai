@@ -5,7 +5,7 @@ import iniziative from "../texts/iniziative.json";
 interface Initiative {
   title: string;
   description: string;
-  images: Array<string>;
+  images: string[];
   imageLeft: boolean;
   button: string;
 }
@@ -16,7 +16,7 @@ interface Initiatives {
 
 interface IniziativeData {
   title: string;
-  iniziative: Initiatives;
+  iniziative: Initiative[];
 }
 
 const iniziativeData: IniziativeData = iniziative;
@@ -26,8 +26,7 @@ export default function Iniziative() {
     <>
       <Box>
         <h1>{iniziativeData.title}</h1>
-        {Object.keys(iniziativeData.iniziative).map((key) => {
-          const initiative = iniziativeData.iniziative[key];
+        {Object.entries(iniziativeData.iniziative).map(([key, initiative]) => {
           return (
             <Box key={key}>
               <Porygon
