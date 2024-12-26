@@ -1,0 +1,9 @@
+{
+  "title": "Titolo",
+  "description": "Descrizione",
+  "documents": [
+    { "path": "/bilancio2023.pdf", "title": "2023" },
+    { "path": "/bilancio2022.pdf", "title": "2022" },
+    { "path": "/bilancio2021.pdf", "title": "2021" }
+  ]
+}
