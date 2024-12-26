@@ -1,8 +1,8 @@
 {
   "title": "Sostenitori",
-  "description": "Quest’anno molte altre aziende del territorio si sono unite al gruppo dei sostenitori, che periodicamente ci forniscono prodotti alimentari freschi, da distribuire alle famiglie in assistenza.",
+  "description": "Quest’anno molte altre aziende del territorio si sono unite al gruppo dei sostenitori, che periodicamente ci forniscono prodotti alimentari freschi, da distribuire alle famiglie in assistenza. \n\n Siamo davvero grati a queste aziende che, grazie alla loro generosità, ci permettono di portare un sorriso alle persone che si trovano in difficoltà.",
   "ringraziamenti": "Siamo davvero grati a queste aziende che, grazie alla loro generosità, ci permettono di portare un sorriso alle persone che si trovano in difficoltà.",
-  "ringraziamenti_img": "/images/ringraziamenti.jpg",
+  "ringraziamenti_img": ["/images/ringraziamenti.jpg"],
   "sostenitori": [
     {
       "url": "https://www.amadori.it/",

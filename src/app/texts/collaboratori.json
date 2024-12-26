@@ -1,8 +1,8 @@
 {
   "title": "Collaboratori",
-  "description": "Anche quest’anno, la nostra associazione ha avuto modo di collaborare con diverse associazioni, esercenti e attività della zona e non solo.",
+  "description": "Anche quest’anno, la nostra associazione ha avuto modo di collaborare con diverse associazioni, esercenti e attività della zona e non solo. \n\n Siamo davvero grati a queste aziende che, grazie alla loro generosità, ci permettono di portare un sorriso alle persone che si trovano in difficoltà.",
   "ringraziamenti": "Siamo davvero grati a queste aziende che, grazie alla loro generosità, ci permettono di portare un sorriso alle persone che si trovano in difficoltà.",
-  "ringraziamenti_img": "/images/ringraziamenti.jpg",
+  "ringraziamenti_img": ["/images/ringraziamenti.jpg"],
   "collaboratori": [
     {
       "url": "https://www.diapason.rimini.it/",
