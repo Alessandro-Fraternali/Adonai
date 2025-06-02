@@ -1,0 +1,22 @@
+{
+  "logo_src": "/images/logotv.png",
+  "logo_alt": "Associazione ADONAI",
+  "info": "Siamo un’ associazione di volontariato che nasce a Cesena nel 2019 su iniziativa di undici persone di diversa nazionalità, uniti dalla volontà di rivolgersi al prossimo ed aiutarlo in maniera concreta con un progetto su misura.",
+  "contacts": [
+    {
+      "label": "Sede Legale: Via Luigi Longo, 43 47522 Cesena (FC)",
+      "href": ""
+    },
+    {
+      "label": "Cell: +39 346 9529870",
+      "href": "tel:+393469529870"
+    },
+    {
+      "label": "Mail: casafamiglia.adonai@outlook.com",
+      "href": "mailto:casafamiglia.adonai@outlook.com"
+    }
+  ],
+  "iban": "IBAN: IT 55 Z 07601 13200 001048094401",
+  "fiscal_code": "Codice Fiscale 5X1000: 90079270402",
+  "credits": "sito fatto da un figo fighissimo"
+}

@@ -21,7 +21,12 @@ export default function RootLayout({
         >
           <Header />
           <main
-            style={{ flex: 1, maxWidth: "100vw", backgroundColor: "lightgray" }}
+            style={{
+              flex: 1,
+              maxWidth: "100vw",
+              backgroundColor: "lightgray",
+              marginTop: "var(--header-height)",
+            }}
           >
             {children}
           </main>

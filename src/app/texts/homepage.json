@@ -1,4 +1,34 @@
 {
-  "jumbotron_title": "Welcome to the ODST",
-  "jumbotron_description": "The ODSTs are one of the primary Special Operations units of the United Nations Space Command, and is under the supervision of Naval Special Warfare Command."
+  "jumbotron_title": "Casa famiglia Adonai",
+  "jumbotron_description": "*“Voi siete la luce del mondo…”*\n-Matteo 5:14",
+  "amore_title": "Amore",
+  "valori": [
+    {
+      "title": "Amore",
+      "description": "Il nostro scopo è aiutare il prossimo in maniera concreta",
+      "image": "/images/homepage/amore.jpg"
+    },
+    {
+      "title": "Ascolto",
+      "description": "Entriamo in contatto diretto con le persone aiutandole e supportandole nelle loro difficoltà",
+      "image": "/images/homepage/ascolto.jpg"
+    },
+    {
+      "title": "Squadra",
+      "description": "Desideriamo instaurare con le famiglie un rapporto di fiducia e amicizia reciproca.",
+      "image": "/images/homepage/squadra.jpg"
+    }
+  ],
+  "ddr": [
+    {
+      "title": "Dona il tuo 5 x 1000",
+      "description": "Associazione Casa Famiglia Adonai si occupa di famiglie in difficoltà. Crediamo nei valori e diamo importanza alle persone. \n Amore – fare squadra – ascolto, su questi valori si basa il nostro operato ed impegno concreto sul territorio di Cesena. \n \n Aiutaci anche tu a portare loro un sorriso e una speranza, attraverso il tuo 5X1000 scrivi sulla tua dichiarazione dei redditi: \n\n Codice Fiscale: 90079270402",
+      "gallery": ["/images/homepage/5x1000.jpg"],
+      "galleryLeft": false,
+      "button": {
+        "text": "Guarda il video",
+        "link": "https://www.youtube.com/embed/Na7VEfypJLU?si=QQ_GiAILO4Fs8b-9"
+      }
+    }
+  ]
 }

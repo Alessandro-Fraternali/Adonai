@@ -32,10 +32,12 @@ export default function Eventi() {
   return (
     <>
       <Box>
-        <Typography variant="h1">{eventiData.title}</Typography>
+        {/* <Typography variant="h1">{eventiData.title}</Typography> */}
         {Object.entries(eventiData.eventi).map(([annoKey, annoValue]) => (
           <Box key={annoKey} marginBottom={3}>
-            <Typography variant="h2">{annoValue.title}</Typography>
+            <Typography variant="h2" paddingLeft={5}>
+              {annoValue.title}
+            </Typography>
             {annoValue.eventiAnnuali.map((evento, index) => (
               <Porygon
                 key={index}

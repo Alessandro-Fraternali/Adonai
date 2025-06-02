@@ -37,6 +37,7 @@ export default function Jumbotron({
         width: "100%",
         position: "relative",
         overflow: "hidden",
+        marginBottom: "120px",
       }}
     >
       <Grid2 container>
@@ -72,9 +73,14 @@ export default function Jumbotron({
           sx={{
             backgroundColor: "rgba(128, 128, 128, 0.8)",
             maxWidth: { xs: "80%", md: "40%" },
+            width: { xs: "80%", md: "auto" },
             position: "absolute",
-            left: "50px",
+            left: { xs: "50%", md: "50px" },
             bottom: { xs: "5%", md: "30%" },
+            transform: {
+              xs: "translateX(-50%)",
+              md: "none",
+            },
             padding: "20px",
           }}
           size={{ xs: 10, md: 5 }}
@@ -86,8 +92,23 @@ export default function Jumbotron({
               </Typography>
             )}
             {description && (
-              <Typography variant="body1" component="p" sx={{ color: "white" }}>
-                {description}
+              <Typography
+                variant="body1"
+                component="div"
+                sx={{ color: "white" }}
+              >
+                {description.split("\n").map((line, index) => (
+                  <Box
+                    key={index}
+                    component="p"
+                    sx={{
+                      fontStyle: line.startsWith("*") ? "italic" : "normal",
+                      margin: 0,
+                    }}
+                  >
+                    {line.replace(/\*/g, "")}
+                  </Box>
+                ))}
               </Typography>
             )}
           </Grid2>

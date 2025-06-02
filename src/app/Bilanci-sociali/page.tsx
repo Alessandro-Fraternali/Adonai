@@ -7,13 +7,15 @@ export default function Bilanci() {
     <>
       <h1>{bilanciData.title}</h1>
       <p>{bilanciData.description}</p>
-      <Box width={"90%"} margin={"auto"}>
-        {bilanciData.documents.map((document, index) => (
-          <Grid2 key={index} size={{ xs: 12 }}>
-            <h2>{document.title}</h2>
-            <Reader document={document.path} />{" "}
-          </Grid2>
-        ))}
+      <Box sx={{ flexGrow: 1, width: "90%", margin: "auto" }}>
+        <Grid2 container spacing={2}>
+          {bilanciData.documents.map((document, index) => (
+            <Grid2 key={index} size={{ xs: 12, md: 6 }}>
+              <h2>{document.title}</h2>
+              <Reader document={document.path} />{" "}
+            </Grid2>
+          ))}
+        </Grid2>
       </Box>
     </>
   );

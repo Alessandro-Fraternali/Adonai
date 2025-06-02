@@ -7,7 +7,7 @@ interface ReaderProps {
 
 const Reader: React.FC<ReaderProps> = ({ document }) => {
   return (
-    <div style={{ width: "100%", height: "100vh", overflow: "auto" }}>
+    <div style={{ width: "100%", height: "90vh", overflow: "auto" }}>
       <iframe
         src={document}
         width="100%"

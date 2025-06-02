@@ -24,14 +24,25 @@ export default function Porygon({
   galleryLeft,
 }: PorygonProps) {
   return (
-    <Box sx={{ flexGrow: 1, width: "90%", margin: "auto" }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        width: {
+          xs: "90%",
+          md: "80%",
+        },
+        margin: "auto",
+        marginBottom: 5,
+      }}
+    >
       <Grid2 container spacing={2}>
         {title ? (
-          <Grid2 bgcolor={"rgba(255, 0, 0, 0.2)"} size={{ xs: 12 }}>
+          <Grid2 size={{ xs: 12 }}>
             <Typography
               variant="h4"
               component="h2"
               textAlign={description ? "left" : "center"}
+              fontWeight={"bold"}
             >
               {title}
             </Typography>
@@ -50,10 +61,7 @@ export default function Porygon({
             }}
           >
             {description ? (
-              <Grid2
-                bgcolor={"rgba(128, 128, 128, 0.2)"}
-                size={{ xs: 12, md: gallery ? 7 : 12 }}
-              >
+              <Grid2 size={{ xs: 12, md: gallery ? 7 : 12 }}>
                 {description ? <Description text={description} /> : null}
                 {button && (!gallery || description) ? (
                   <Grid2
@@ -61,7 +69,7 @@ export default function Porygon({
                       xs: "center",
                       md: !gallery && description ? "center" : "left",
                     }}
-                    marginLeft={!gallery && description ? 0 : 5}
+                    marginLeft={{ xs: 0, md: !gallery && description ? 0 : 5 }}
                     marginTop={description ? 3 : 0}
                   >
                     <Button variant="contained">
@@ -79,10 +87,7 @@ export default function Porygon({
               </Grid2>
             ) : null}
             {gallery ? (
-              <Grid2
-                bgcolor={"rgba(0, 128, 0, 0.07)"}
-                size={{ xs: 12, md: description ? 5 : 12 }}
-              >
+              <Grid2 size={{ xs: 12, md: description ? 5 : 12 }}>
                 <Box
                   sx={{
                     width: "100%",
@@ -117,11 +122,11 @@ export default function Porygon({
         ) : null}
         {button && gallery && !description ? (
           <Grid2
-            bgcolor={"rgba(255, 255, 0, 0.2)"}
             size={{ xs: 12 }}
             display={"flex"}
             justifyContent={"center"}
             marginTop={3}
+            marginLeft={0}
           >
             <Link href={button.link} target="_blank" color="error">
               {button.text}
