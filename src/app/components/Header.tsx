@@ -14,27 +14,34 @@ export default function Header() {
         top: 0,
         left: 0,
         zIndex: 1,
-        paddingLeft: "20px",
         display: "flex",
         flexWrap: "wrap",
         alignItems: "center",
-        gap: "20px",
+        // gap: "20px",
       }}
     >
       <Box
-        style={{
+        sx={{
+          paddingLeft: "20px",
           width: "100%",
+          height: "100%",
+          borderBottom: {
+            xs: "2px solid #f0f0f0",
+            md: "none",
+          },
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
         }}
       >
-        <Image
-          src="/images/logot.png"
-          alt="Associazione ADONAI"
-          width={200}
-          height={65}
-        />
+        <Link href="/" style={{ display: "flex", alignItems: "center" }}>
+          <Image
+            src="/images/logot.png"
+            alt="Associazione ADONAI"
+            width={195}
+            height={60}
+          />
+        </Link>
         <Box
           style={{
             width: "45%",
@@ -47,7 +54,7 @@ export default function Header() {
             <Link
               key={link.label}
               href={link.href}
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: "#f0f0f0", textDecoration: "none" }}
             >
               {link.label}
             </Link>

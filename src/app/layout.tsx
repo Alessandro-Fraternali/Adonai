@@ -24,7 +24,7 @@ export default function RootLayout({
             style={{
               flex: 1,
               maxWidth: "100vw",
-              backgroundColor: "lightgray",
+              backgroundColor: "#f0f0f0",
               marginTop: "var(--header-height)",
             }}
           >

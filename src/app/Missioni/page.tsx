@@ -25,8 +25,8 @@ const missioniData: MissioniData = missioni;
 export default function Missioni() {
   return (
     <>
-      <Box>
-        <h1>{missioniData.title}</h1>
+      <Box paddingTop={10}>
+        {/* <h1>{missioniData.title}</h1> */}
         {Object.entries(missioniData.missioni).map(([key, missioni]) => {
           return (
             <Box key={key}>

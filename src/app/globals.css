@@ -19,23 +19,6 @@ body {
   width: auto !important;
 }
 
-.alice-carousel__prev-btn-wrapper {
-  background-color: white;
-  border: 1px solid blue;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  border-radius: 100%;
-}
-
-.alice-carousel__prev-btn-wrapper:hover {
-  background-color: red;
-}
-
-.alice-carousel__prev-btn-wrapper:hover .alice-carousel__prev-btn-item {
-  color: yellow;
-}
-
 .alice-carousel__next-btn {
   right: 0;
   position: absolute;
@@ -43,19 +26,39 @@ body {
   width: auto !important;
 }
 
-.alice-carousel__next-btn-wrapper {
-  background-color: white;
-  border: 1px solid blue;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  border-radius: 100%;
-}
-
-.alice-carousel__next-btn-wrapper:hover {
-  background-color: red;
+.alice-carousel__next-btn-wrapper,
+.alice-carousel__prev-btn-wrapper {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .alice-carousel__dots {
   margin-top: 0 !important;
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  background-color: #f0f0f0;
+  color: #4e54bf !important;
+  border: #4e54bf 2px solid;
+  font-size: 40px;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.alice-carousel__next-btn-item:hover {
+  background-color: #4e54bf;
+  color: #f0f0f0 !important;
+}
+
+.alice-carousel__prev-btn-item:hover {
+  background-color: #4e54bf;
+  color: #f0f0f0 !important;
 }

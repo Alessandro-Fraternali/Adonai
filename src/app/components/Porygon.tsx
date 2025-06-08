@@ -36,7 +36,7 @@ export default function Porygon({
       }}
     >
       <Grid2 container spacing={2}>
-        {title ? (
+        {/* {title ? (
           <Grid2 size={{ xs: 12 }}>
             <Typography
               variant="h4"
@@ -47,7 +47,7 @@ export default function Porygon({
               {title}
             </Typography>
           </Grid2>
-        ) : null}
+        ) : null} */}
         {description || button || gallery ? (
           <Grid2
             size={{ xs: 12 }}
@@ -62,6 +62,16 @@ export default function Porygon({
           >
             {description ? (
               <Grid2 size={{ xs: 12, md: gallery ? 7 : 12 }}>
+                {title ? (
+                  <Typography
+                    variant="h4"
+                    component="h2"
+                    textAlign={description ? "left" : "center"}
+                    fontWeight={"bold"}
+                  >
+                    {title}
+                  </Typography>
+                ) : null}
                 {description ? <Description text={description} /> : null}
                 {button && (!gallery || description) ? (
                   <Grid2
@@ -106,9 +116,8 @@ export default function Porygon({
                         alt="Associazione ADONAI"
                         fill
                         style={{
-                          objectFit: "contain",
-                          top: 0,
-                          left: 0,
+                          objectFit: "scale-down",
+                          objectPosition: "right",
                         }}
                       />
                     )

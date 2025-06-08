@@ -23,8 +23,8 @@ const iniziativeData: IniziativeData = iniziative;
 export default function Iniziative() {
   return (
     <>
-      <Box>
-        <h1>{iniziativeData.title}</h1>
+      <Box paddingTop={10}>
+        {/* <h1>{iniziativeData.title}</h1> */}
         {Object.entries(iniziativeData.iniziative).map(([key, initiative]) => {
           return (
             <Box key={key}>

@@ -10,7 +10,7 @@ export default function Footer() {
         style={{
           width: "100%",
           background: "linear-gradient(to right, #4E54BF, #8096E9)",
-          color: "white",
+          color: "#f0f0f0",
         }}
       >
         <Box
