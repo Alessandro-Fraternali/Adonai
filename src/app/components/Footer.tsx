@@ -23,7 +23,7 @@ export default function Footer() {
           <Grid2
             container
             spacing={2}
-            flexDirection={{ xs: "column-reverse", md: "row" }}
+            // flexDirection={{ xs: "column-reverse", md: "row" }}
           >
             <Grid2 size={{ xs: 12, md: 6 }}>
               <Description text={footer.info} />
@@ -39,7 +39,7 @@ export default function Footer() {
                   <MuiLink
                     key={contact.label}
                     href={contact.href}
-                    target="_blank"
+                    // target="_blank"
                     rel="noopener noreferrer"
                     sx={{
                       display: "block",
@@ -59,7 +59,11 @@ export default function Footer() {
                 )
               )}
             </Grid2>
-            <Grid2 size={{ xs: 12, md: 2 }} textAlign={"center"}>
+            <Grid2
+              size={{ xs: 12, md: 2 }}
+              textAlign={"center"}
+              display={{ xs: "none", md: "block" }}
+            >
               <Image
                 src={footer.logo_src}
                 alt={footer.logo_alt}

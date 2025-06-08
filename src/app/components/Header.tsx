@@ -25,10 +25,6 @@ export default function Header() {
           paddingLeft: "20px",
           width: "100%",
           height: "100%",
-          borderBottom: {
-            xs: "2px solid #f0f0f0",
-            md: "none",
-          },
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
