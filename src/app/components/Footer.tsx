@@ -2,6 +2,7 @@ import { Box, Link as MuiLink, Typography, Grid2 } from "@mui/material";
 import Image from "next/image";
 import footer from "../texts/footer.json";
 import Description from "./Description";
+import { iconMap } from "../utils/iconMap";
 
 export default function Footer() {
   return (
@@ -34,17 +35,20 @@ export default function Footer() {
             </Grid2>
 
             <Grid2 size={{ xs: 12, md: 4 }}>
-              {footer.contacts.map((contact) =>
-                contact.href ? (
+              {footer.contacts.map((contact) => {
+                const icon = iconMap[contact.icon?.toLowerCase()] || null;
+
+                return (
                   <MuiLink
                     key={contact.label}
                     href={contact.href}
-                    // target="_blank"
+                    target="_blank"
                     rel="noopener noreferrer"
                     sx={{
-                      display: "block",
+                      display: "flex",
+                      alignItems: "center",
                       fontSize: "1.1rem",
-                      padding: 2,
+                      padding: 4,
                       color: "inherit",
                       textDecoration: "none",
                       "&:hover": {
@@ -52,12 +56,13 @@ export default function Footer() {
                       },
                     }}
                   >
-                    {contact.label}
+                    {icon}
+                    <Box component="span" sx={{ marginLeft: 1 }}>
+                      {contact.label}
+                    </Box>
                   </MuiLink>
-                ) : (
-                  <Description key={contact.label} text={contact.label} />
-                )
-              )}
+                );
+              })}
             </Grid2>
             <Grid2
               size={{ xs: 12, md: 2 }}

@@ -5,17 +5,17 @@
   "contacts": [
     {
       "icon": "home",
-      "label": "Sede Legale: Via Luigi Longo, 43 47522 Cesena (FC)",
+      "label": "Via Luigi Longo, 43 47522 Cesena (FC)",
       "href": "https://www.google.com/maps?q=Via+Luigi+Longo+43,+47522+Cesena+(FC)"
     },
     {
       "icon": "phone",
-      "label": "Cell: +39 346 9529870",
+      "label": "+39 346 9529870",
       "href": "tel:+393469529870"
     },
     {
       "icon": "email",
-      "label": "Mail: casafamiglia.adonai@outlook.com",
+      "label": "casafamiglia.adonai@outlook.com",
       "href": "mailto:casafamiglia.adonai@outlook.com"
     }
   ],

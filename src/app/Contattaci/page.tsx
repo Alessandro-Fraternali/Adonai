@@ -2,19 +2,8 @@ import { Box, Grid2, Link as MuiLink, Paper } from "@mui/material";
 import contattaci from "../texts/contattaci.json";
 import footer from "../texts/footer.json";
 import Description from "../components/Description";
-import MenuIcon from "@mui/icons-material/Menu";
-import EmailIcon from "@mui/icons-material/Email";
-import PhoneIcon from "@mui/icons-material/Phone";
-import HomeIcon from "@mui/icons-material/Home";
-import { JSX } from "react";
+import { iconMap } from "../utils/iconMap";
 import ContactForm from "../components/ContactForm";
-
-export const iconMap: Record<string, JSX.Element> = {
-  menuicon: <MenuIcon />,
-  email: <EmailIcon />,
-  phone: <PhoneIcon />,
-  home: <HomeIcon />,
-};
 
 export default function Contattaci() {
   return (
