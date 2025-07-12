@@ -48,7 +48,7 @@ export default function Footer() {
                       display: "flex",
                       alignItems: "center",
                       fontSize: "1.1rem",
-                      padding: 4,
+                      padding: 2,
                       color: "inherit",
                       textDecoration: "none",
                       "&:hover": {
@@ -58,11 +58,44 @@ export default function Footer() {
                   >
                     {icon}
                     <Box component="span" sx={{ marginLeft: 1 }}>
+                      <h3>{contact.title}</h3>
                       {contact.label}
                     </Box>
                   </MuiLink>
                 );
               })}
+              <Grid2 paddingLeft={6} paddingTop={2}>
+                <Box component="span">
+                  <h3>Seguici sui social</h3>
+                </Box>
+                <Grid2 display={"flex"} gap={4} marginTop={2}>
+                  {footer.socials.map((social) => {
+                    const icon = iconMap[social.icon?.toLowerCase()] || null;
+
+                    return (
+                      <MuiLink
+                        key={social.href}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          fontSize: "1.1rem",
+                          padding: 0.5,
+                          color: "inherit",
+                          textDecoration: "none",
+                          "&:hover": {
+                            textDecoration: "underline",
+                          },
+                        }}
+                      >
+                        {icon}
+                      </MuiLink>
+                    );
+                  })}
+                </Grid2>
+              </Grid2>
             </Grid2>
             <Grid2
               size={{ xs: 12, md: 2 }}
@@ -90,7 +123,11 @@ export default function Footer() {
         }}
       >
         <Link
-          style={{ color: "#ff4d00" }}
+          style={{
+            color: "#ff4d00",
+            textDecoration: "underline",
+            textDecorationColor: "#ff4d00",
+          }}
           target="_blank"
           href={footer.portfolio}
         >

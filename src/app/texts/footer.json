@@ -22,6 +22,20 @@
       "href": "mailto:casafamiglia.adonai@outlook.com"
     }
   ],
+  "socials": [
+    {
+      "icon": "instagram",
+      "href": "https://www.instagram.com/casa_famiglia_adonai"
+    },
+    {
+      "icon": "facebook",
+      "href": "https://www.facebook.com/associazionecasaadonai"
+    },
+    {
+      "icon": "youtube",
+      "href": "https://www.youtube.com/@casafamigliaadonai7457"
+    }
+  ],
   "iban": "IBAN: IT 55 Z 07601 13200 001048094401",
   "fiscal_code": "Codice Fiscale 5X1000: 90079270402",
   "credits": "Progettato e sviluppato da Alessandro Fraternali a titolo gratuito per Casa Famiglia Adonai",

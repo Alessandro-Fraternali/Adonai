@@ -56,6 +56,38 @@ export default function Contattaci() {
                   </MuiLink>
                 );
               })}
+              <Grid2 paddingLeft={10}>
+                <Box component="span" sx={{ marginLeft: 4 }}>
+                  <h3>Seguici sui social</h3>
+                </Box>
+                <Grid2 display={"flex"} gap={4} marginTop={2}>
+                  {footer.socials.map((social) => {
+                    const icon = iconMap[social.icon?.toLowerCase()] || null;
+
+                    return (
+                      <MuiLink
+                        key={social.href}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          fontSize: "1.1rem",
+                          padding: 0.5,
+                          color: "inherit",
+                          textDecoration: "none",
+                          "&:hover": {
+                            textDecoration: "underline",
+                          },
+                        }}
+                      >
+                        {icon}
+                      </MuiLink>
+                    );
+                  })}
+                </Grid2>
+              </Grid2>
             </Grid2>
           </Grid2>
           <Grid2 size={{ xs: 12, md: 6 }} display={"flex"}>
