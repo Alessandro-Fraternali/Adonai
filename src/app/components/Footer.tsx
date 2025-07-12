@@ -15,7 +15,7 @@ export default function Footer() {
         }}
       >
         <Box
-          padding={{ xs: "10px", md: "100px" }}
+          padding={{ xs: "10px", md: "80px" }}
           paddingTop={"40px"}
           paddingBottom={"20px"}
         >
@@ -64,36 +64,42 @@ export default function Footer() {
                   </MuiLink>
                 );
               })}
-              <Grid2 paddingLeft={6} paddingTop={2}>
-                <Box component="span">
+              <Grid2
+                display={"flex"}
+                justifyContent={{ xs: "center", md: "flex-start" }}
+                paddingBottom={{ xs: 2, md: 0 }}
+                paddingLeft={{ xs: 0, md: 6 }}
+                paddingTop={2}
+              >
+                <Grid2>
                   <h3>Seguici sui social</h3>
-                </Box>
-                <Grid2 display={"flex"} gap={4} marginTop={2}>
-                  {footer.socials.map((social) => {
-                    const icon = iconMap[social.icon?.toLowerCase()] || null;
+                  <Grid2 display={"flex"} gap={4} marginTop={2}>
+                    {footer.socials.map((social) => {
+                      const icon = iconMap[social.icon?.toLowerCase()] || null;
 
-                    return (
-                      <MuiLink
-                        key={social.href}
-                        href={social.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        sx={{
-                          display: "flex",
-                          alignItems: "center",
-                          fontSize: "1.1rem",
-                          padding: 0.5,
-                          color: "inherit",
-                          textDecoration: "none",
-                          "&:hover": {
-                            textDecoration: "underline",
-                          },
-                        }}
-                      >
-                        {icon}
-                      </MuiLink>
-                    );
-                  })}
+                      return (
+                        <MuiLink
+                          key={social.href}
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontSize: "1.1rem",
+                            padding: 0.5,
+                            color: "inherit",
+                            textDecoration: "none",
+                            "&:hover": {
+                              textDecoration: "underline",
+                            },
+                          }}
+                        >
+                          {icon}
+                        </MuiLink>
+                      );
+                    })}
+                  </Grid2>
                 </Grid2>
               </Grid2>
             </Grid2>
@@ -120,19 +126,30 @@ export default function Footer() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          padding: { xs: 7, md: 4 },
+          fontSize: { xs: 20, md: 18 },
+          textAlign: "center",
         }}
       >
-        <Link
+        <p
           style={{
             color: "#ff4d00",
-            textDecoration: "underline",
-            textDecorationColor: "#ff4d00",
           }}
-          target="_blank"
-          href={footer.portfolio}
         >
-          {footer.credits}
-        </Link>
+          Progettato e sviluppato da{" "}
+          <Link
+            style={{
+              color: "#ff4d00",
+              textDecoration: "underline",
+              textDecorationColor: "#ff4d00",
+            }}
+            target="_blank"
+            href={footer.portfolio}
+          >
+            Alessandro Fraternali
+          </Link>{" "}
+          a titolo gratuito per Casa Famiglia Adonai
+        </p>
       </Box>
     </>
   );
