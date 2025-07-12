@@ -14,14 +14,19 @@ export default function Contattaci() {
           <Description text={contattaci.description} />
         </Grid2>
 
-        <Grid2 container paddingTop={5} display={"flex"}>
+        <Grid2
+          container
+          paddingTop={5}
+          display={"flex"}
+          flexDirection={{ xs: "column-reverse", md: "row" }}
+        >
           <Grid2
             size={{ xs: 12, md: 6 }}
             display={"flex"}
             justifyContent={"flex-end"}
             alignItems={"center"}
           >
-            <Grid2 size={8}>
+            <Grid2 size={{ xs: 12, md: 8 }}>
               {footer.contacts.map((contact) => {
                 const icon = iconMap[contact.icon?.toLowerCase()] || null;
 
@@ -44,7 +49,8 @@ export default function Contattaci() {
                     }}
                   >
                     {icon}
-                    <Box component="span" sx={{ marginLeft: 1 }}>
+                    <Box component="span" sx={{ marginLeft: 4 }}>
+                      <h3>{contact.title}</h3>
                       {contact.label}
                     </Box>
                   </MuiLink>

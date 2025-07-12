@@ -2,13 +2,19 @@
 import Link from "next/link";
 import links from "../texts/links.json";
 import Image from "next/image";
-import { Box, IconButton, useMediaQuery } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Box, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import MobileMenu from "./MobileMenu";
+import { useState } from "react";
 
 export default function Header() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleLogoClick = () => {
+    if (menuOpen) setMenuOpen(false);
+  };
 
   return (
     <header
@@ -19,7 +25,7 @@ export default function Header() {
         position: "fixed",
         top: 0,
         left: 0,
-        zIndex: 1,
+        zIndex: 91,
         display: "flex",
         flexWrap: "wrap",
         alignItems: "center",
@@ -35,7 +41,11 @@ export default function Header() {
           alignItems: "center",
         }}
       >
-        <Link href="/" style={{ display: "flex", alignItems: "center" }}>
+        <Link
+          href="/"
+          onClick={handleLogoClick}
+          style={{ display: "flex", alignItems: "center" }}
+        >
           <Image
             src="/images/logot.png"
             alt="Associazione ADONAI"
@@ -44,14 +54,15 @@ export default function Header() {
           />
         </Link>
 
-        {/* Desktop navigation */}
         {!isMobile && (
           <Box
             sx={{
-              width: "45%",
+              width: "70%",
               display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "30px",
+              justifyContent: "flex-end",
+              gap: "20px",
+              paddingRight: "60px",
+              textTransform: "uppercase",
             }}
           >
             {links.map((link) => (
@@ -66,12 +77,7 @@ export default function Header() {
           </Box>
         )}
 
-        {/* Mobile menu icon */}
-        {isMobile && (
-          <IconButton sx={{ color: "white", marginRight: "20px" }}>
-            <MenuIcon fontSize="large" />
-          </IconButton>
-        )}
+        {isMobile && <MobileMenu open={menuOpen} setOpen={setMenuOpen} />}
       </Box>
     </header>
   );

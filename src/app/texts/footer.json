@@ -5,21 +5,25 @@
   "contacts": [
     {
       "icon": "home",
+      "title": "Sede legale",
       "label": "Via Luigi Longo, 43 47522 Cesena (FC)",
       "href": "https://www.google.com/maps?q=Via+Luigi+Longo+43,+47522+Cesena+(FC)"
     },
     {
       "icon": "phone",
+      "title": "Telefono",
       "label": "+39 346 9529870",
       "href": "tel:+393469529870"
     },
     {
       "icon": "email",
+      "title": "Email",
       "label": "casafamiglia.adonai@outlook.com",
       "href": "mailto:casafamiglia.adonai@outlook.com"
     }
   ],
   "iban": "IBAN: IT 55 Z 07601 13200 001048094401",
   "fiscal_code": "Codice Fiscale 5X1000: 90079270402",
-  "credits": "sito fatto da un trapanatore"
+  "credits": "Progettato e sviluppato da Alessandro Fraternali a titolo gratuito per Casa Famiglia Adonai",
+  "portfolio": "https://alessandro-fraternali.com/"
 }

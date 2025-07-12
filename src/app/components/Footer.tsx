@@ -1,4 +1,4 @@
-import { Box, Link as MuiLink, Typography, Grid2 } from "@mui/material";
+import { Box, Link as MuiLink, Grid2, Link } from "@mui/material";
 import Image from "next/image";
 import footer from "../texts/footer.json";
 import Description from "./Description";
@@ -81,7 +81,7 @@ export default function Footer() {
       </footer>
       <Box
         sx={{
-          backgroundColor: "black",
+          backgroundColor: "#161616",
           color: "coral",
           height: "40px",
           display: "flex",
@@ -89,7 +89,13 @@ export default function Footer() {
           alignItems: "center",
         }}
       >
-        <Typography variant="body2">{footer.credits}</Typography>
+        <Link
+          style={{ color: "#ff4d00" }}
+          target="_blank"
+          href={footer.portfolio}
+        >
+          {footer.credits}
+        </Link>
       </Box>
     </>
   );
