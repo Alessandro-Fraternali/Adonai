@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Porygon from "../components/Porygon";
 import eventi from "../texts/eventi.json";
 
@@ -31,13 +31,13 @@ const eventiData = eventi as Eventi;
 export default function Eventi() {
   return (
     <>
-      <Box>
+      <Box paddingTop={10}>
         {/* <Typography variant="h1">{eventiData.title}</Typography> */}
         {Object.entries(eventiData.eventi).map(([annoKey, annoValue]) => (
           <Box key={annoKey} marginBottom={3}>
-            <Typography variant="h2" paddingLeft={5}>
+            {/* <Typography variant="h2" paddingLeft={5}>
               {annoValue.title}
-            </Typography>
+            </Typography> */}
             {annoValue.eventiAnnuali.map((evento, index) => (
               <Porygon
                 key={index}

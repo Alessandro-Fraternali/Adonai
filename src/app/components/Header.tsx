@@ -1,9 +1,15 @@
+"use client";
 import Link from "next/link";
 import links from "../texts/links.json";
 import Image from "next/image";
-import { Box } from "@mui/material";
+import { Box, IconButton, useMediaQuery } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useTheme } from "@mui/material/styles";
 
 export default function Header() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <header
       style={{
@@ -17,7 +23,6 @@ export default function Header() {
         display: "flex",
         flexWrap: "wrap",
         alignItems: "center",
-        // gap: "20px",
       }}
     >
       <Box
@@ -38,24 +43,35 @@ export default function Header() {
             height={60}
           />
         </Link>
-        <Box
-          style={{
-            width: "45%",
-            display: "flex",
-            justifyContent: "space-between",
-            paddingRight: "30px",
-          }}
-        >
-          {links.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              style={{ color: "#f0f0f0", textDecoration: "none" }}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </Box>
+
+        {/* Desktop navigation */}
+        {!isMobile && (
+          <Box
+            sx={{
+              width: "45%",
+              display: "flex",
+              justifyContent: "space-between",
+              paddingRight: "30px",
+            }}
+          >
+            {links.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                style={{ color: "#f0f0f0", textDecoration: "none" }}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </Box>
+        )}
+
+        {/* Mobile menu icon */}
+        {isMobile && (
+          <IconButton sx={{ color: "white", marginRight: "20px" }}>
+            <MenuIcon fontSize="large" />
+          </IconButton>
+        )}
       </Box>
     </header>
   );

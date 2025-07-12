@@ -5,9 +5,11 @@ import bilanciData from "../texts/bilanci.json";
 export default function Bilanci() {
   return (
     <>
-      <h1>{bilanciData.title}</h1>
-      <p>{bilanciData.description}</p>
-      <Box sx={{ flexGrow: 1, width: "90%", margin: "auto" }}>
+      <Box
+        paddingTop={10}
+        paddingBottom={10}
+        sx={{ flexGrow: 1, width: "90%", margin: "auto" }}
+      >
         <Grid2 container spacing={2}>
           {bilanciData.documents.map((document, index) => (
             <Grid2 key={index} size={{ xs: 12, md: 6 }}>
