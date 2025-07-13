@@ -138,7 +138,7 @@ export default function Footer() {
           style={{
             color: "#ff4d00",
             fontFamily: "'Open Sans', sans-serif",
-            fontSize: "1.1rem",
+            fontSize: "1rem",
           }}
         >
           Progettato e sviluppato da{" "}
