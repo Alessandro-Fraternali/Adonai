@@ -69,12 +69,7 @@ export default function Header() {
               <Link
                 key={link.label}
                 href={link.href}
-                style={{
-                  color: "#f0f0f0",
-                  textDecoration: "none",
-                  fontFamily: "'Open Sans', sans-serif",
-                  letterSpacing: 0.5,
-                }}
+                className="link-underline-animate"
               >
                 {link.label}
               </Link>
