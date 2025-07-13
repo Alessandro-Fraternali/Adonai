@@ -9,7 +9,10 @@ export default function Contattaci() {
   return (
     <>
       <Box paddingTop={5} marginBottom={10}>
-        <Grid2 textAlign={"center"}>
+        <Grid2
+          textAlign={"center"}
+          style={{ fontFamily: "'Open Sans', sans-serif" }}
+        >
           <h1>{contattaci.title}</h1>
           <Description text={contattaci.description} />
         </Grid2>
@@ -49,7 +52,14 @@ export default function Contattaci() {
                     }}
                   >
                     {icon}
-                    <Box component="span" sx={{ marginLeft: 4 }}>
+                    <Box
+                      component="span"
+                      sx={{
+                        marginLeft: 4,
+                        fontFamily: "'Open Sans', sans-serif",
+                        fontSize: "1rem",
+                      }}
+                    >
                       <h3>{contact.title}</h3>
                       {contact.label}
                     </Box>
@@ -63,7 +73,14 @@ export default function Contattaci() {
                 paddingTop={2}
               >
                 <Grid2>
-                  <h2>Seguici sui social</h2>
+                  <h2
+                    style={{
+                      fontFamily: "'Open Sans', sans-serif",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    Seguici sui social
+                  </h2>
                   <Grid2 display={"flex"} gap={4} marginTop={2}>
                     {footer.socials.map((social) => {
                       const icon = iconMap[social.icon?.toLowerCase()] || null;

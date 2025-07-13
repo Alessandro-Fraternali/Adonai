@@ -47,10 +47,11 @@ export default function Footer() {
                     sx={{
                       display: "flex",
                       alignItems: "center",
-                      fontSize: "1.1rem",
+                      fontSize: "1rem",
                       padding: 2,
                       color: "inherit",
                       textDecoration: "none",
+                      fontFamily: "'Open Sans', sans-serif",
                       "&:hover": {
                         textDecoration: "underline",
                       },
@@ -72,7 +73,9 @@ export default function Footer() {
                 paddingTop={2}
               >
                 <Grid2>
-                  <h3>Seguici sui social</h3>
+                  <h3 style={{ fontFamily: "'Open Sans', sans-serif" }}>
+                    Seguici sui social
+                  </h3>
                   <Grid2 display={"flex"} gap={4} marginTop={2}>
                     {footer.socials.map((social) => {
                       const icon = iconMap[social.icon?.toLowerCase()] || null;
@@ -134,6 +137,8 @@ export default function Footer() {
         <p
           style={{
             color: "#ff4d00",
+            fontFamily: "'Open Sans', sans-serif",
+            fontSize: "1.1rem",
           }}
         >
           Progettato e sviluppato da{" "}

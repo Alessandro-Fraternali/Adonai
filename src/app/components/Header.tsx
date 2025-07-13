@@ -74,7 +74,6 @@ export default function Header() {
                   textDecoration: "none",
                   fontFamily: "'Open Sans', sans-serif",
                   letterSpacing: 0.5,
-                  // fontFamily: "'Roboto', sans-serif",
                 }}
               >
                 {link.label}

@@ -11,7 +11,7 @@ const Description: React.FC<DescriptionProps> = ({ text }) => {
     <ReactMarkdown
       components={{
         p: ({ children }) => (
-          <Typography variant="body1" sx={{ fontSize: "1.1rem", padding: 2 }}>
+          <Typography variant="body1" sx={{ fontSize: "1rem", padding: 2 }}>
             {children}
           </Typography>
         ),
