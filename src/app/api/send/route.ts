@@ -7,16 +7,16 @@ export async function POST(req: Request) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "fraternalialessandro@gmail.com",
+      user: "casafamigliaadonai2019@gmail.com",
       pass: process.env.GMAIL_APP_PASSWORD,
     },
   });
 
   const mailOptions = {
     from: email,
-    to: "fraternalialessandro@gmail.com",
+    to: "casafamigliaadonai2019@gmail.com",
     subject: `Nuovo messaggio da ${name}`,
-    text: `Hai ricevuto un nuovo messaggio dal sito web! \n\n Nome: ${name} \n\n Email: ${email} \n\n Messaggio: \n\n ${message}`,
+    text: `Hai ricevuto un nuovo messaggio dal sito web!\n\nNome: ${name}\n\nEmail: ${email}\n\nMessaggio:\n\n${message}`,
   };
 
   try {
