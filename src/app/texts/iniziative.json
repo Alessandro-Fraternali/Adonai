@@ -2,7 +2,19 @@
   "title": "Iniziative",
   "iniziative": [
     {
-      "title": "Progetto Liberamente",
+      "title": "Progetto 'Volontari per un giorno'",
+      "description": "Abbiamo invitato le nostre famiglie a condividere per un giorno quelli che sono i nostri impegni nella preparazione dei pacchi alimentari in modo da far conoscere l'associazione in tutto ciò che siamo anche nel nostro lavoro per loro",
+      "gallery": [
+        "/images/iniziative/volontarioperungiorno/1.jpeg",
+        "/images/iniziative/volontarioperungiorno/2.jpeg",
+        "/images/iniziative/volontarioperungiorno/3.jpeg",
+        "/images/iniziative/volontarioperungiorno/4.jpeg",
+        "/images/iniziative/volontarioperungiorno/5.jpeg"
+      ],
+      "galleryLeft": true
+    },
+    {
+      "title": "Progetto 'Liberamente'",
       "description": "Il progetto “Liberamente” nasce da un’ idea di accogliere, supportare e aiutare concretamente tutte quelle persone che durante un momento di fragilità nella loro vita si ritrovano a dover svolgere le ore socialmente utili. Il progetto consiste in ore laboratoriali in cui si creano gli ogetti che successivamente andranno in esposizione nei nostri mercatini.",
       "gallery": [
         "/images/iniziative/liberamente1.jpeg",
